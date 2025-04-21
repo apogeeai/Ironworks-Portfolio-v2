@@ -32,10 +32,10 @@ export function ServicesSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-20">
           <span className="uppercase text-sm font-bold tracking-widest text-indigo-600 mb-3 inline-block">
-            What We Offer
+            
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Our Services
+            
           </h2>
           <div className="h-1 w-24 bg-indigo-600 mx-auto rounded" />
         </div>

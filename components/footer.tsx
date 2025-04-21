@@ -5,6 +5,7 @@ export function Footer() {
   return (
     <footer className="border-t">
       <div className="container max-w-7xl mx-auto py-8 px-4 sm:px-6 md:flex md:items-center md:justify-between">
+        {/* Social icons commented out for now
         <div className="flex justify-center space-x-6 md:order-2">
           <Link 
             href="https://github.com" 
@@ -41,9 +42,10 @@ export function Footer() {
             <Mail className="h-5 w-5" />
           </Link>
         </div>
-        <div className="mt-8 md:mt-0 md:order-1">
+        */}
+        <div className="mt-0 w-full md:mt-0 md:order-1">
           <p className="text-center text-sm text-muted-foreground">
-            &copy; {new Date().getFullYear()} Developer Portfolio. All rights reserved.
+            &copy; 2025 Ironworks Interactive. All rights reserved.
           </p>
         </div>
       </div>

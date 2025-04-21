@@ -4,6 +4,11 @@ import { useEffect, useState } from "react";
 import { ArrowDown, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+
+// Easing function - easeInOutCubic
+const easeInOutCubic = (t: number) => 
+  t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
 
 export function HeroSection() {
   const [mounted, setMounted] = useState(false);
@@ -12,91 +17,143 @@ export function HeroSection() {
     setMounted(true);
   }, []);
 
+  const handleScrollToSection = (e: React.MouseEvent<HTMLButtonElement>, sectionId: string) => {
+    e.preventDefault();
+    const element = document.querySelector(sectionId);
+    
+    if (element) {
+      // Get the element's position relative to the viewport
+      const elementPosition = element.getBoundingClientRect().top;
+      // Get the current scroll position
+      const startPosition = window.pageYOffset;
+      // Calculate distance to scroll
+      const distance = elementPosition;
+      
+      const duration = 1200; // Duration in ms (1.2 seconds)
+      let start: number | null = null;
+      
+      // Animation frame recursive function
+      const animateScroll = (timestamp: number) => {
+        if (!start) start = timestamp;
+        const progress = timestamp - start;
+        const percentage = Math.min(progress / duration, 1);
+        
+        window.scrollTo(0, startPosition + distance * easeInOutCubic(percentage));
+        
+        if (progress < duration) {
+          window.requestAnimationFrame(animateScroll);
+        }
+      };
+      
+      window.requestAnimationFrame(animateScroll);
+    }
+  };
+
   return (
     <div className="relative min-h-screen flex items-center" id="home">
       <div className="absolute inset-0">
-        <div className={cn(
-          "w-full h-full",
-          mounted && "opacity-100 transform-none"
-        )}>
+        <motion.div 
+          className="w-full h-full"
+          initial={{ opacity: 0, scale: 1.05 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2 }}
+        >
           <img
             src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80"
             alt="Hero background"
             className="w-full h-full object-cover"
           />
-        </div>
+        </motion.div>
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-purple-900/40" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-32 mt-16">
         <div className="lg:max-w-3xl">
-          <div className={cn(
-            "mb-6",
-            mounted && "opacity-100 transform-none"
-          )}>
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.6 }}
+          >
             <span className="inline-block bg-white/20 backdrop-blur-sm text-white px-4 py-1 rounded-full text-sm font-medium tracking-widest uppercase mb-4">
-              Visual Storytelling
+              Demand Generation Strategies
             </span>
-          </div>
+          </motion.div>
 
-          <h1 className={cn(
-            "text-5xl md:text-7xl font-bold mb-6 text-white leading-tight",
-            mounted && "opacity-100 transform-none"
-          )}>
-            Capturing <br className="hidden sm:block" />
+          <motion.h1 
+            className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.7 }}
+          >
+            Creative <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-300">
-              Moments in Motion
+              Web Solutions
             </span>
-          </h1>
+          </motion.h1>
 
-          <p className={cn(
-            "text-xl md:text-2xl mb-10 text-gray-200 max-w-2xl",
-            mounted && "opacity-100 transform-none"
-          )}>
-            Photography & Cinematography that tells your story with emotion, 
-            depth, and stunning visual clarity.
-          </p>
+          <motion.p 
+            className="text-xl md:text-2xl mb-10 text-gray-200 max-w-2xl"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 0.7 }}
+          >
+            Cutting-edge strategies for businesses to boost website traffic and increase revenue.
+          </motion.p>
 
-          <div className={cn(
-            "flex flex-col sm:flex-row gap-5",
-            mounted && "opacity-100 transform-none"
-          )}>
-            <Button
-              size="lg"
-              className="bg-indigo-600 text-white hover:bg-indigo-700 shadow-lg shadow-indigo-600/20 group"
-              onClick={() => document.querySelector("#portfolio")?.scrollIntoView({
-                behavior: "smooth"
-              })}
+          <motion.div 
+            className="flex flex-col sm:flex-row gap-5"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.9, duration: 0.7 }}
+          >
+            <motion.button
+              className="inline-flex items-center justify-center text-sm font-medium h-11 rounded-md px-8 bg-indigo-600 text-white hover:bg-indigo-700 shadow-lg shadow-indigo-600/20 group"
+              onClick={(e) => handleScrollToSection(e, "#portfolio")}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 400, damping: 17 }}
             >
               View Portfolio
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-2 border-white bg-transparent text-white hover:bg-white hover:text-indigo-900"
-              onClick={() => document.querySelector("#contact")?.scrollIntoView({
-                behavior: "smooth"
-              })}
-            >
-              Get in Touch
-            </Button>
-          </div>
+              <motion.span
+                className="ml-2"
+                initial={{ x: 0 }}
+                animate={{ x: [0, 5, 0] }}
+                transition={{ 
+                  repeat: Infinity, 
+                  repeatType: "loop", 
+                  duration: 1.5,
+                  repeatDelay: 1
+                }}
+              >
+                <ArrowRight className="w-5 h-5" />
+              </motion.span>
+            </motion.button>
+          </motion.div>
         </div>
       </div>
 
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white">
-        <Button
-          variant="ghost"
-          size="icon"
-          className="animate-bounce"
-          onClick={() => document.querySelector("#services")?.scrollIntoView({
-            behavior: "smooth"
-          })}
+      <motion.div 
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 0.5 }}
+      >
+        <motion.button
+          className="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 w-10 text-white"
+          onClick={(e) => handleScrollToSection(e, "#portfolio")}
+          whileHover={{ y: 5 }}
+          whileTap={{ scale: 0.9 }}
+          animate={{ y: [0, 10, 0] }}
+          transition={{ 
+            repeat: Infinity, 
+            repeatType: "loop", 
+            duration: 2,
+            repeatDelay: 0.5
+          }}
         >
           <ArrowDown className="h-6 w-6" />
-        </Button>
-      </div>
+        </motion.button>
+      </motion.div>
     </div>
   );
 }

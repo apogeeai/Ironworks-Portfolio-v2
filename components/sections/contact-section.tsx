@@ -94,7 +94,7 @@ export function ContactSection() {
     >
       <div className="container max-w-6xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-          Get In Touch
+          
         </h2>
         <p className="text-muted-foreground text-center max-w-3xl mx-auto mb-12">
           Have a project in mind or want to chat? Feel free to reach out using the form below 
