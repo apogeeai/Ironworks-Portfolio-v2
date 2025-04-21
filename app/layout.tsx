@@ -9,7 +9,7 @@ import { Footer } from '@/components/footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Ironworks Interactive',
+  title: 'IronWorks Interactive',
   description: 'Cutting-edge strategies for businesses to boost website traffic and increase revenue',
   icons: [
     { rel: 'apple-touch-icon', sizes: '180x180', url: '/apple-touch-icon.png' },

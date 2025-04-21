@@ -45,7 +45,7 @@ export function Footer() {
         */}
         <div className="mt-0 w-full md:mt-0 md:order-1">
           <p className="text-center text-sm text-muted-foreground">
-            &copy; 2025 Ironworks Interactive. All rights reserved.
+            &copy; 2025 IronWorks Interactive. All rights reserved.
           </p>
         </div>
       </div>

@@ -13,8 +13,13 @@ export function ProjectsSection() {
   const [isVisible, setIsVisible] = useState(false);
   const [filter, setFilter] = useState<ProjectFilter>("all");
 
-  // Extract unique tags from projects
-  const allTags = [...new Set(projects.flatMap(project => project.tags))].sort();
+  // Extract unique tags from projects using an alternative approach
+  const allTags = Array.from(
+    projects.reduce((acc, project) => {
+      project.tags.forEach(tag => acc.add(tag));
+      return acc;
+    }, new Set<string>())
+  ).sort();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
