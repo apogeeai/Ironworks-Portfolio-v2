@@ -7,7 +7,6 @@
   from = "/*"
   to = "/index.html"
   status = 200
-  force = true
 
 [[headers]]
   for = "/*"
@@ -17,3 +16,4 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "no-referrer-when-downgrade"
     Cache-Control = "public, max-age=0, must-revalidate"
+    Access-Control-Allow-Origin = "*"
