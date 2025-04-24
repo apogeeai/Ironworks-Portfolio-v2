@@ -91,15 +91,15 @@ export function PortfolioSection() {
               variants={itemVariants}
               className="gallery-item"
             >
-              <img className="content-image" src="https://ironworksinteractive.com/wp-content/uploads/2025/02/Moden-Marketing-Dashboard.png" alt="Modern Marketing Dashboard" />
+              <img className="content-image" src="/public/thumbnails/Moden-Marketing-Dashboard-355x250.png" data-full="/public/Moden-Marketing-Dashboard.png" alt="Modern Marketing Dashboard" />
             </motion.a>
-            
+
             <motion.a 
               href="#" 
               className="gallery-item lightbox-trigger" 
               variants={itemVariants}
             >
-              <img className="content-image" src="https://ironworksinteractive.com/wp-content/uploads/2025/01/Apogee-Intelligence.png" alt="Apogee Intelligence" />
+              <img className="content-image" src="/public/thumbnails/Apogee-Intelligence-355x250.png" data-full="/public/Apogee-Intelligence.png" alt="Apogee Intelligence" />
             </motion.a>
 
             <motion.a 
@@ -108,16 +108,16 @@ export function PortfolioSection() {
               variants={itemVariants}
               className="gallery-item"
             >
-              <img className="content-image" src="https://ironworksinteractive.com/wp-content/uploads/2025/03/AR-Dashboard-v2.png" alt="AR Dashboard" />
+              <img className="content-image" src="/public/thumbnails/AR-Dashboard-v2-355x250.png" data-full="/public/AR-Dashboard-v2.png" alt="AR Dashboard" />
             </motion.a>
-                          
+
             <motion.a 
               href="https://synaptivesounds.com/" 
               target="_blank" 
               variants={itemVariants}
               className="gallery-item"
             >
-              <img className="content-image" src="https://ironworksinteractive.com/wp-content/uploads/2025/01/Synaptive-Sounds.png" alt="Synaptive Sounds" />
+              <img className="content-image" src="/public/thumbnails/Synaptive-Sounds-355x250.png" data-full="/public/Synaptive-Sounds.png" alt="Synaptive Sounds" />
             </motion.a>
 
             <motion.a 
@@ -126,7 +126,7 @@ export function PortfolioSection() {
               variants={itemVariants}
               className="gallery-item"
             >
-              <img className="content-image" src="https://ironworksinteractive.com/wp-content/uploads/2025/03/Predictive-Analytics-v5.png" alt="Predictive Analytics" />
+              <img className="content-image" src="/public/thumbnails/Predictive-Analytics-v5-355x250.png" data-full="/public/Predictive-Analytics-v5.png" alt="Predictive Analytics" />
             </motion.a>
 
             <motion.a 
@@ -135,15 +135,7 @@ export function PortfolioSection() {
               variants={itemVariants}
               className="gallery-item"
             >
-              <img className="content-image" src="https://ironworksinteractive.com/wp-content/uploads/2025/03/Relaxing-Blob-v2.jpg" alt="Relaxing Blob" />
-            </motion.a>
-          
-            <motion.a 
-              href="#" 
-              className="gallery-item lightbox-trigger" 
-              variants={itemVariants}
-            >
-              <img className="content-image" src="https://ironworksinteractive.com/wp-content/uploads/2024/08/Shorelight-Screenshot.png" alt="Shorelight Screenshot" />
+              <img className="content-image" src="/public/thumbnails/Relaxing-Blob-v2-355x250.jpg" data-full="/public/Relaxing-Blob-v2.jpg" alt="Relaxing Blob" />
             </motion.a>
 
             <motion.a 
@@ -151,7 +143,15 @@ export function PortfolioSection() {
               className="gallery-item lightbox-trigger" 
               variants={itemVariants}
             >
-              <img className="content-image" src="https://ironworksinteractive.com/wp-content/uploads/2024/08/UIC-Screenshot.png" alt="UIC Screenshot" />
+              <img className="content-image" src="/public/thumbnails/Shorelight-Screenshot-355x250.png" data-full="/public/Shorelight-Screenshot.png" alt="Shorelight Screenshot" />
+            </motion.a>
+
+            <motion.a 
+              href="#" 
+              className="gallery-item lightbox-trigger" 
+              variants={itemVariants}
+            >
+              <img className="content-image" src="/public/thumbnails/UIC-Screenshot-355x250.png" data-full="/public/UIC-Screenshot.png" alt="UIC Screenshot" />
             </motion.a>
 
             <motion.a 
@@ -159,7 +159,7 @@ export function PortfolioSection() {
               className="gallery-item lightbox-trigger" 
               variants={itemVariants}
             >      
-              <img className="content-image" src="https://ironworksinteractive.com/wp-content/uploads/2024/08/US-News-Screenshot.png" alt="US News Screenshot" />
+              <img className="content-image" src="/public/thumbnails/US-News-Screenshot-355x250.png" data-full="/public/US-News-Screenshot.png" alt="US News Screenshot" />
             </motion.a>
 
             <motion.a 
@@ -167,7 +167,7 @@ export function PortfolioSection() {
               className="gallery-item lightbox-trigger" 
               variants={itemVariants}
             >    
-              <img className="content-image" src="https://ironworksinteractive.com/wp-content/uploads/2024/08/LSU-Screenshot.png" alt="LSU Screenshot" />
+              <img className="content-image" src="/public/thumbnails/LSU-Screenshot-355x250.png" data-full="/public/LSU-Screenshot.png" alt="LSU Screenshot" />
             </motion.a>
 
             <motion.a 
@@ -175,7 +175,7 @@ export function PortfolioSection() {
               className="gallery-item lightbox-trigger" 
               variants={itemVariants}
             >       
-              <img className="content-image" src="https://ironworksinteractive.com/wp-content/uploads/2024/08/AU-Screenshot.png" alt="AU Screenshot" />
+              <img className="content-image" src="/public/thumbnails/AU-Screenshot-355x250.png" data-full="/public/AU-Screenshot.png" alt="AU Screenshot" />
             </motion.a>
 
             <motion.a 
@@ -183,12 +183,12 @@ export function PortfolioSection() {
               className="gallery-item lightbox-trigger" 
               variants={itemVariants}
             >    
-              <img className="content-image" src="https://ironworksinteractive.com/wp-content/uploads/2025/01/MetroCU-Screenshot-v2.png" alt="MetroCU Screenshot" />
+              <img className="content-image" src="/public/thumbnails/MetroCU-Screenshot-v2-355x250.png" data-full="/public/MetroCU-Screenshot-v2.png" alt="MetroCU Screenshot" />
             </motion.a>
           </motion.div>
         </div>
       </div>
-      
+
       {/* Lightbox Component */}
       <Lightbox />
     </div>
