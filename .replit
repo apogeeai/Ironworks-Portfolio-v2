@@ -12,3 +12,14 @@ build = ["sh", "-c", "npm run build"]
 [[ports]]
 localPort = 3000
 externalPort = 80
+
+[workflows]
+
+[[workflows.workflow]]
+name = "Restart Server"
+author = 36003217
+mode = "sequential"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "npm run build && npm start"
