@@ -1,0 +1,43 @@
+Adam M. Carfagna
+Demand Generation & Marketing Automation Manager	adam.carfagna@gmail.com • (617) 281-5533
+Portfolio • LinkedIn • Saugus, MA, 01906
+Strategic and data-driven professional with extensive experience in streamlining marketing processes and enhancing organizational visibility through innovative strategies. Proven track record of driving pipeline growth, campaign performance, and marketing efficiency.  Expert in optimizing marketing platforms, leading successful integrations, and maximizing platform utilization. Proficient in executing multichannel demand generation strategies, managing end-to-end marketing automation workflows, and aligning with sales teams to optimize lead quality and conversion. Skilled in dynamic content personalization and A/B testing to boost conversion rates, alongside leveraging cutting-edge technology to accelerate marketing funnel velocity. Adept at overseeing MarTech stacks, improving processes, and scaling revenue-focused marketing programs in fast-paced environments. 
+Areas of Expertise
+•	SEO Optimization
+•	MarTech Platform Integration
+•	AI Predictive Analytics	•	Demand Generation
+•	Marketing and Email Automation
+•	Dynamic Content Personalization	•	Web Development
+•	Strategic Communication
+•	Cross-Functional Collaboration
+Professional Experience
+Metro Credit Union, Chelsea, MA
+Demand Generation/Marketing Automation Manager	2020 — 2024
+Streamlined demand generation and marketing automation processes through development and implementation of effective strategies that enhanced credit union visibility and member engagement. Served as Marketo expert and resource by facilitating seamless integration and maximizing utilization of the platform. Developed demand generation roadmap and applied AI predictive analytics technology to optimize real-time marketing efforts. 
+●	Pioneered AI-powered predictive analytics dashboard for rapid campaign insights and marketing strategy optimization. 
+●	Boosted member engagement by 25% and retention rates by 20% via execution of Marketo demand generation roadmap. 
+●	Attained Marketo certification and expertly directed transition from HubSpot to Marketo by contributing to $15.4M in net earnings in CD segment in 2023. 
+Shorelight Education, Boston, MA 
+Digital Marketing Manager/Web Developer	2014 — 2019
+Conceived and executed comprehensive marketing automation strategies by utilizing HubSpot and subsequently Marketo. Leveraged Tableau and Power BI to provide analytical insights and performance reporting by fostering informed decision-making among management. Implemented user interface improvements, conducted competitive research, and optimized PPC campaigns to support lead-nurturing efforts. 
+●	Enhanced conversion rates by 25% through content personalization and A/B testing across landing pages/email workflows. 
+●	Increased 40% in qualified leads by orchestrating demand generation strategies across more than 19 university partner programs for enhancing multi-channel acquisition funnels by integrating SEO-optimized WordPress sites and personalized email nurture campaigns. 
+AppNeta (Broadcom), Boston, MA
+Marketing Web Developer	2010 — 2013
+Redesigned website architectures for SaaS company in 2010 and 2013 using CMS, HTML, CSS, PHP, jQuery, MySQL, SEO, and SMM to enhance functionality. Deployed detailed Google Ads and Meta Ad campaigns to drive traffic to keyword-specific landing pages. Directed strategic ad campaigns that increased site traffic and engagement metrics by targeting high-value keywords. 
+●	Engineered targeted automated emails and landing pages through utilization of Marketo and Salesforce to bolster lead generation effectiveness. 
+●	Achieved substantial improvements in website performance and visual appeal through comprehensive redesign initiatives, exemplified by significant decrease in bounce rate by 45%. 
+Additional Experience
+Marketing Content Specialist (Contract), Nuance Communications (Microsoft), Burlington, MA 
+Marketing Web Developer, Bullhorn, Boston, MA 
+Co-Founder and Project Manager, Ironworks Interactive, Boston, MA 
+Education & Credentials
+Bachelor of Science in Electrical & Computer Systems Engineering
+University of Massachusetts Amherst, Amherst, MA
+Activities: Talent Advancement Program, IEEE. Additional Coursework in Digital Marketing and Data Analytics. 
+Adobe Certified Professional - Marketo Engage 
+Technical Proficiencies
+Marketing Technology Platforms & Tools: Marketo | HubSpot | Salesforce Marketing Cloud | Klaviyo | Braze | Pardot | Eloqua | Iterable | 6sense | SEMrush | Google Analytics 4 | Google Tag Manager (GTM) | Optimizely | Google Optimize | Litmus | Email on Acid (EoA) | Browser Stack | WordPress | Drupal | Adobe Experience Manager | Shopify | Meta Ads | Google Ads | Adobe Creative Cloud | Canva | Figma 
+Technical & Web Development Tools: HTML | CSS | JavaScript | TypeScript | Next.js | jQuery | PHP | Python | Velocity Script | MySQL | GitHub | REST | SOAP | GraphQL | WebSocket | OAuth | Nintex RPA | Python Automation | Zapier | Make | N8n | Microsoft Power Automate 
+Data & Analytics Tools: Power BI | Tableau | Google Analytics | Excel 
+AI Tools & Platforms: AI Agents | Claude | Cursor | Bolt.new | v0.dev | GitHub Copilot | ChatGPT | Perplexity | Midjourney | ComfyUI | Jasper | Copy.ai | Writer.com | TensorFlow | PyTorch | CUDA | LangChain 
