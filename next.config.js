@@ -6,7 +6,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  trailingSlash: true
+  trailingSlash: false
 };
 
 module.exports = nextConfig;
