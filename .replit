@@ -1,8 +1,8 @@
-modules = ["nodejs-20", "web"]
-run = "npm run dev"
+run = "npm run build && npm start"
+hidden = [".git", "node_modules", ".config"]
 
 [nix]
-channel = "stable-24_05"
+channel = "stable-22_11"
 
 [deployment]
 run = ["sh", "-c", "npm start"]
