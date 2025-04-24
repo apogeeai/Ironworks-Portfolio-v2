@@ -91,7 +91,7 @@ export function PortfolioSection() {
               variants={itemVariants}
               className="gallery-item"
             >
-              <img className="content-image" src="/public/thumbnails/Moden-Marketing-Dashboard.png" data-full="/Moden-Marketing-Dashboard.png" alt="Modern Marketing Dashboard" />
+              <img className="content-image" src="/thumbnails/Moden-Marketing-Dashboard.png" data-full="/Moden-Marketing-Dashboard.png" alt="Modern Marketing Dashboard" />
             </motion.a>
 
             <motion.a 
