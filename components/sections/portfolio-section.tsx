@@ -91,7 +91,7 @@ export function PortfolioSection() {
               variants={itemVariants}
               className="gallery-item"
             >
-              <img className="content-image" src="/Moden-Marketing-Dashboard.png" data-full="/Moden-Marketing-Dashboard.png" alt="Modern Marketing Dashboard" />
+              <img className="content-image" src="/thumbnails/Moden-Marketing-Dashboard.png" data-full="/Moden-Marketing-Dashboard.png" alt="Modern Marketing Dashboard" />
             </motion.a>
 
             <motion.a 
@@ -99,7 +99,7 @@ export function PortfolioSection() {
               className="gallery-item lightbox-trigger" 
               variants={itemVariants}
             >
-              <img className="content-image" src="/Apogee-Intelligence.png" data-full="/Apogee-Intelligence.png" alt="Apogee Intelligence" />
+              <img className="content-image" src="/thumbnails/Apogee-Intelligence.png" data-full="/Apogee-Intelligence.png" alt="Apogee Intelligence" />
             </motion.a>
 
             <motion.a 
@@ -108,7 +108,7 @@ export function PortfolioSection() {
               variants={itemVariants}
               className="gallery-item"
             >
-              <img className="content-image" src="/AR-Dashboard-v2.png" data-full="/AR-Dashboard-v2.png" alt="AR Dashboard" />
+              <img className="content-image" src="/thumbnails/AR-Dashboard-v2.png" data-full="/AR-Dashboard-v2.png" alt="AR Dashboard" />
             </motion.a>
 
             <motion.a 
@@ -117,7 +117,7 @@ export function PortfolioSection() {
               variants={itemVariants}
               className="gallery-item"
             >
-              <img className="content-image" src="/Synaptive-Sounds.png" data-full="/Synaptive-Sounds.png" alt="Synaptive Sounds" />
+              <img className="content-image" src="/thumbnails/Synaptive-Sounds.png" data-full="/Synaptive-Sounds.png" alt="Synaptive Sounds" />
             </motion.a>
 
             <motion.a 
@@ -126,7 +126,7 @@ export function PortfolioSection() {
               variants={itemVariants}
               className="gallery-item"
             >
-              <img className="content-image" src="/Predictive-Analytics-v5.png" data-full="/Predictive-Analytics-v5.png" alt="Predictive Analytics" />
+              <img className="content-image" src="/thumbnails/Predictive-Analytics-v5.png" data-full="/Predictive-Analytics-v5.png" alt="Predictive Analytics" />
             </motion.a>
 
             <motion.a 
@@ -135,7 +135,7 @@ export function PortfolioSection() {
               variants={itemVariants}
               className="gallery-item"
             >
-              <img className="content-image" src="/Relaxing-Blob-v2.jpg" data-full="/Relaxing-Blob-v2.jpg" alt="Relaxing Blob" />
+              <img className="content-image" src="/thumbnails/Relaxing-Blob-v2.jpg" data-full="/Relaxing-Blob-v2.jpg" alt="Relaxing Blob" />
             </motion.a>
 
             <motion.a 
@@ -143,7 +143,7 @@ export function PortfolioSection() {
               className="gallery-item lightbox-trigger" 
               variants={itemVariants}
             >
-              <img className="content-image" src="/Shorelight-Screenshot.png" data-full="/Shorelight-Screenshot.png" alt="Shorelight Screenshot" />
+              <img className="content-image" src="/thumbnails/Shorelight-Screenshot.png" data-full="/Shorelight-Screenshot.png" alt="Shorelight Screenshot" />
             </motion.a>
 
             <motion.a 
@@ -151,7 +151,7 @@ export function PortfolioSection() {
               className="gallery-item lightbox-trigger" 
               variants={itemVariants}
             >
-              <img className="content-image" src="/UIC-Screenshot.png" data-full="/UIC-Screenshot.png" alt="UIC Screenshot" />
+              <img className="content-image" src="/thumbnails/UIC-Screenshot.png" data-full="/UIC-Screenshot.png" alt="UIC Screenshot" />
             </motion.a>
 
             <motion.a 
@@ -159,7 +159,7 @@ export function PortfolioSection() {
               className="gallery-item lightbox-trigger" 
               variants={itemVariants}
             >      
-              <img className="content-image" src="/US-News-Screenshot.png" data-full="/US-News-Screenshot.png" alt="US News Screenshot" />
+              <img className="content-image" src="/thumbnails/US-News-Screenshot.png" data-full="/US-News-Screenshot.png" alt="US News Screenshot" />
             </motion.a>
 
             <motion.a 
@@ -167,7 +167,7 @@ export function PortfolioSection() {
               className="gallery-item lightbox-trigger" 
               variants={itemVariants}
             >    
-              <img className="content-image" src="/LSU-Screenshot.png" data-full="/LSU-Screenshot.png" alt="LSU Screenshot" />
+              <img className="content-image" src="/thumbnails/LSU-Screenshot.png" data-full="/LSU-Screenshot.png" alt="LSU Screenshot" />
             </motion.a>
 
             <motion.a 
@@ -175,7 +175,7 @@ export function PortfolioSection() {
               className="gallery-item lightbox-trigger" 
               variants={itemVariants}
             >       
-              <img className="content-image" src="/AU-Screenshot.png" data-full="/AU-Screenshot.png" alt="AU Screenshot" />
+              <img className="content-image" src="/thumbnails/AU-Screenshot.png" data-full="/AU-Screenshot.png" alt="AU Screenshot" />
             </motion.a>
 
             <motion.a 
@@ -183,7 +183,7 @@ export function PortfolioSection() {
               className="gallery-item lightbox-trigger" 
               variants={itemVariants}
             >    
-              <img className="content-image" src="/MetroCU-Screenshot-v2.png" data-full="/MetroCU-Screenshot-v2.png" alt="MetroCU Screenshot" />
+              <img className="content-image" src="/thumbnails/MetroCU-Screenshot-v2.png" data-full="/MetroCU-Screenshot-v2.png" alt="MetroCU Screenshot" />
             </motion.a>
           </motion.div>
         </div>
