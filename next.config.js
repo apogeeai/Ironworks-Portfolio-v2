@@ -6,17 +6,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  trailingSlash: false,
-  async rewrites() {
-    return {
-      fallback: [
-        {
-          source: '/:path*',
-          destination: '/_next/static/:path*'
-        }
-      ]
-    }
-  }
+  trailingSlash: false
 };
 
 module.exports = nextConfig;
