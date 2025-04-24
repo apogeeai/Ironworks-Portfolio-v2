@@ -8,7 +8,7 @@ const targetDir = path.join(__dirname, '../public/thumbnails');
 
 // Create thumbnails directory if it doesn't exist
 if (!fs.existsSync(targetDir)) {
-  fs.mkdirSync(targetDir);
+  fs.mkdirSync(targetDir, { recursive: true });
 }
 
 const images = [
@@ -33,7 +33,7 @@ async function createThumbnails() {
     
     try {
       await sharp(sourcePath)
-        .resize(355, 250, {
+        .resize(350, 255, {
           fit: 'cover',
           position: 'center'
         })
