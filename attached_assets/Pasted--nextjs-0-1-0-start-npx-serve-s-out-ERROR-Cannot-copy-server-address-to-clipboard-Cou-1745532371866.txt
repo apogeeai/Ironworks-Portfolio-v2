@@ -1,0 +1,476 @@
+
+
+> nextjs@0.1.0 start
+> npx serve -s out
+
+ ERROR  Cannot copy server address to clipboard: Couldn't find the `xsel` binary and fallback didn't work. On Debian/Ubuntu you can install xsel with: sudo apt install xsel.
+
+   ┌───────────────────────────────────────────┐
+   │                                           │
+   │   Serving!                                │
+   │                                           │
+   │   - Local:    http://localhost:3000       │
+   │   - Network:  http://172.31.128.74:3000   │
+   │                                           │
+   └───────────────────────────────────────────┘
+
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 GET /
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 Returned 200 in 13 ms
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 GET /
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 GET /
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 GET /
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 GET /
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 GET /
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 GET /
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 GET /
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 GET /
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 GET /
+ HTTP  4/24/2025 10:04:09 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 GET /_next/static/media/a34f9d1faa5f3315-s.p.woff2
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 Returned 304 in 2 ms
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 GET /_next/static/css/cf563238e67fc054.css
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 Returned 304 in 2 ms
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 GET /_next/static/media/a34f9d1faa5f3315-s.p.woff2
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 GET /_next/static/css/cf563238e67fc054.css
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 GET /public/thumbnails/Apogee-Intelligence-355x250.png
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 Returned 200 in 1 ms
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 GET /public/thumbnails/Moden-Marketing-Dashboard-355x250.png
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 Returned 200 in 1 ms
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 GET /_next/static/media/a34f9d1faa5f3315-s.p.woff2
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 GET /_next/static/css/cf563238e67fc054.css
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 GET /public/thumbnails/Apogee-Intelligence-355x250.png
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 GET /_next/static/css/cf563238e67fc054.css
+ HTTP  4/24/2025 10:04:10 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/css/cf563238e67fc054.css
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/css/cf563238e67fc054.css
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/media/a34f9d1faa5f3315-s.p.woff2
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Moden-Marketing-Dashboard-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 2 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Apogee-Intelligence-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/AR-Dashboard-v2-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/css/cf563238e67fc054.css
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 200 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Synaptive-Sounds-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 200 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/media/a34f9d1faa5f3315-s.p.woff2
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Moden-Marketing-Dashboard-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Apogee-Intelligence-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/css/cf563238e67fc054.css
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Predictive-Analytics-v5-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 200 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/media/a34f9d1faa5f3315-s.p.woff2
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Relaxing-Blob-v2-355x250.jpg
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 200 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Shorelight-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 200 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/UIC-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 200 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/AR-Dashboard-v2-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/css/cf563238e67fc054.css
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/media/a34f9d1faa5f3315-s.p.woff2
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Synaptive-Sounds-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/webpack-13fad35397c24606.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 2 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/fd9d1056-cd9a5b71416a037e.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 2 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Moden-Marketing-Dashboard-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/css/cf563238e67fc054.css
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/media/a34f9d1faa5f3315-s.p.woff2
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/864-b20a3b703e84f1b7.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/US-News-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/main-app-c045ba46cf061056.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Apogee-Intelligence-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 200 in 2 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 11 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 3 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/AR-Dashboard-v2-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/LSU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/media/a34f9d1faa5f3315-s.p.woff2
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 200 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Relaxing-Blob-v2-355x250.jpg
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Predictive-Analytics-v5-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/UIC-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Shorelight-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 2 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/media/a34f9d1faa5f3315-s.p.woff2
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Synaptive-Sounds-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/AU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 200 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/MetroCU-Screenshot-v2-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 200 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Moden-Marketing-Dashboard-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Apogee-Intelligence-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/webpack-13fad35397c24606.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/fd9d1056-cd9a5b71416a037e.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/AR-Dashboard-v2-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Relaxing-Blob-v2-355x250.jpg
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Predictive-Analytics-v5-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/UIC-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/864-b20a3b703e84f1b7.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Shorelight-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/main-app-c045ba46cf061056.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/US-News-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Synaptive-Sounds-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Moden-Marketing-Dashboard-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/LSU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/webpack-13fad35397c24606.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Apogee-Intelligence-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/fd9d1056-cd9a5b71416a037e.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Relaxing-Blob-v2-355x250.jpg
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/AR-Dashboard-v2-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Predictive-Analytics-v5-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/UIC-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/864-b20a3b703e84f1b7.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 2 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/AU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Shorelight-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/MetroCU-Screenshot-v2-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/main-app-c045ba46cf061056.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/US-News-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Synaptive-Sounds-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/LSU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Moden-Marketing-Dashboard-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/webpack-13fad35397c24606.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 2 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Apogee-Intelligence-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/fd9d1056-cd9a5b71416a037e.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Relaxing-Blob-v2-355x250.jpg
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Predictive-Analytics-v5-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/AR-Dashboard-v2-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/UIC-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/864-b20a3b703e84f1b7.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/AU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Shorelight-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/MetroCU-Screenshot-v2-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/main-app-c045ba46cf061056.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/US-News-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Synaptive-Sounds-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /_next/static/chunks/webpack-13fad35397c24606.js
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/LSU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 GET /public/thumbnails/Moden-Marketing-Dashboard-355x250.png
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 2 ms
+ HTTP  4/24/2025 10:04:11 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Apogee-Intelligence-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/fd9d1056-cd9a5b71416a037e.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Relaxing-Blob-v2-355x250.jpg
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Predictive-Analytics-v5-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/AR-Dashboard-v2-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/UIC-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/864-b20a3b703e84f1b7.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Shorelight-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/AU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/MetroCU-Screenshot-v2-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/main-app-c045ba46cf061056.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/US-News-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Synaptive-Sounds-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/webpack-13fad35397c24606.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Moden-Marketing-Dashboard-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 2 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/LSU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Apogee-Intelligence-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 3 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/fd9d1056-cd9a5b71416a037e.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Relaxing-Blob-v2-355x250.jpg
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/AR-Dashboard-v2-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/UIC-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/864-b20a3b703e84f1b7.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Predictive-Analytics-v5-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 2 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Shorelight-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/MetroCU-Screenshot-v2-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/AU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/US-News-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/main-app-c045ba46cf061056.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Moden-Marketing-Dashboard-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/webpack-13fad35397c24606.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Synaptive-Sounds-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/LSU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Relaxing-Blob-v2-355x250.jpg
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/fd9d1056-cd9a5b71416a037e.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/AR-Dashboard-v2-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/864-b20a3b703e84f1b7.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/UIC-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Shorelight-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Predictive-Analytics-v5-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/US-News-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/MetroCU-Screenshot-v2-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/main-app-c045ba46cf061056.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/AU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/webpack-13fad35397c24606.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Synaptive-Sounds-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/LSU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Relaxing-Blob-v2-355x250.jpg
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/fd9d1056-cd9a5b71416a037e.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/AR-Dashboard-v2-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Shorelight-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/UIC-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/864-b20a3b703e84f1b7.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Predictive-Analytics-v5-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/main-app-c045ba46cf061056.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/MetroCU-Screenshot-v2-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/webpack-13fad35397c24606.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/AU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/US-News-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Synaptive-Sounds-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/LSU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Relaxing-Blob-v2-355x250.jpg
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/fd9d1056-cd9a5b71416a037e.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/315-4181cf6bddf66b63.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/app/layout-e24ab0caf0ab2011.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/905-9f6bd2bfb8395238.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/app/page-4b4f6d3dec5a76ae.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/UIC-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Predictive-Analytics-v5-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/Shorelight-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/864-b20a3b703e84f1b7.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/main-app-c045ba46cf061056.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/AU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/MetroCU-Screenshot-v2-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/webpack-13fad35397c24606.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/LSU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/US-News-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/fd9d1056-cd9a5b71416a037e.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/315-4181cf6bddf66b63.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/app/layout-e24ab0caf0ab2011.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/905-9f6bd2bfb8395238.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/app/page-4b4f6d3dec5a76ae.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/864-b20a3b703e84f1b7.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/main-app-c045ba46cf061056.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/AU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/MetroCU-Screenshot-v2-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/LSU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/315-4181cf6bddf66b63.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/US-News-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/app/layout-e24ab0caf0ab2011.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/905-9f6bd2bfb8395238.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/app/page-4b4f6d3dec5a76ae.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/AU-Screenshot-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /public/thumbnails/MetroCU-Screenshot-v2-355x250.png
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/315-4181cf6bddf66b63.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 2 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/905-9f6bd2bfb8395238.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/app/layout-e24ab0caf0ab2011.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/app/page-4b4f6d3dec5a76ae.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/315-4181cf6bddf66b63.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/app/layout-e24ab0caf0ab2011.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/905-9f6bd2bfb8395238.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/app/page-4b4f6d3dec5a76ae.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/315-4181cf6bddf66b63.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/app/layout-e24ab0caf0ab2011.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/905-9f6bd2bfb8395238.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/app/page-4b4f6d3dec5a76ae.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 GET /_next/static/chunks/315-4181cf6bddf66b63.js
+ HTTP  4/24/2025 10:04:12 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 GET /_next/static/chunks/app/layout-e24ab0caf0ab2011.js
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 GET /_next/static/chunks/905-9f6bd2bfb8395238.js
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 GET /_next/static/chunks/app/page-4b4f6d3dec5a76ae.js
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 GET /_next/static/chunks/315-4181cf6bddf66b63.js
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 GET /_next/static/chunks/app/layout-e24ab0caf0ab2011.js
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 GET /_next/static/chunks/905-9f6bd2bfb8395238.js
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 GET /_next/static/chunks/app/page-4b4f6d3dec5a76ae.js
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 GET /_next/static/chunks/905-9f6bd2bfb8395238.js
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 GET /_next/static/chunks/315-4181cf6bddf66b63.js
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 GET /_next/static/chunks/app/layout-e24ab0caf0ab2011.js
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 GET /_next/static/chunks/app/page-4b4f6d3dec5a76ae.js
+ HTTP  4/24/2025 10:04:13 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:15 PM 172.31.128.74 GET /_next/static/chunks/315-4181cf6bddf66b63.js
+ HTTP  4/24/2025 10:04:15 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:15 PM 172.31.128.74 GET /_next/static/chunks/app/layout-e24ab0caf0ab2011.js
+ HTTP  4/24/2025 10:04:15 PM 172.31.128.74 Returned 304 in 1 ms
+ HTTP  4/24/2025 10:04:15 PM 172.31.128.74 GET /_next/static/chunks/905-9f6bd2bfb8395238.js
+ HTTP  4/24/2025 10:04:15 PM 172.31.128.74 Returned 304 in 0 ms
+ HTTP  4/24/2025 10:04:15 PM 172.31.128.74 GET /_next/static/chunks/app/page-4b4f6d3dec5a76ae.js
+ HTTP  4/24/2025 10:04:15 PM 172.31.128.74 Returned 304 in 0 ms
