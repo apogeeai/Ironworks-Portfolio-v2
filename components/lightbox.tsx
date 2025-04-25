@@ -95,10 +95,26 @@ export default function Lightbox() {
   }, []);
 
   return (
-    <div id="lightbox" className="lightbox">
+    <div id="lightbox" className="lightbox" style={{ overflow: 'hidden' }}>
       <span className="close">&times;</span>
       <span id="prev" className="chevron left">&#10094;</span>
-      <img className="lightbox-content" id="lightbox-img" alt="Lightbox content" />
+      <img 
+        className="lightbox-content" 
+        id="lightbox-img" 
+        alt="Lightbox content" 
+        style={{
+          maxWidth: '90vw',
+          maxHeight: '90vh',
+          width: 'auto',
+          height: 'auto',
+          margin: 'auto',
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          objectFit: 'contain'
+        }}
+      />
       <span id="next" className="chevron right">&#10095;</span>
     </div>
   );
