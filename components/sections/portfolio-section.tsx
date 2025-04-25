@@ -106,7 +106,7 @@ export function PortfolioSection() {
               href="https://ar-dashboard.adamsdevideas.com/" 
               target="_blank" 
               variants={itemVariants}
-              className="gallery-item lightbox-trigger"
+              className="gallery-item"
             >
               <img className="content-image" src="/thumbnails/AR-Dashboard-v2.png" data-full="/AR-Dashboard-v2.png" alt="AR Dashboard" />
             </motion.a>
@@ -115,7 +115,7 @@ export function PortfolioSection() {
               href="https://synaptivesounds.com/" 
               target="_blank" 
               variants={itemVariants}
-              className="gallery-item lightbox-trigger"
+              className="gallery-item"
             >
               <img className="content-image" src="/thumbnails/Synaptive-Sounds.png" data-full="/Synaptive-Sounds.png" alt="Synaptive Sounds" />
             </motion.a>
@@ -124,7 +124,7 @@ export function PortfolioSection() {
               href="https://demand-gen.adamsdevideas.com/" 
               target="_blank" 
               variants={itemVariants}
-              className="gallery-item lightbox-trigger"
+              className="gallery-item"
             >
               <img className="content-image" src="/thumbnails/Predictive-Analytics-v5.png" data-full="/Predictive-Analytics-v5.png" alt="Predictive Analytics" />
             </motion.a>
@@ -133,7 +133,7 @@ export function PortfolioSection() {
               href="https://meditation-orb.adamsdevideas.com/" 
               target="_blank" 
               variants={itemVariants}
-              className="gallery-item lightbox-trigger"
+              className="gallery-item"
             >
               <img className="content-image" src="/thumbnails/Relaxing-Blob-v2.png" data-full="/Relaxing-Blob-v2.jpg" alt="Relaxing Blob" />
             </motion.a>
