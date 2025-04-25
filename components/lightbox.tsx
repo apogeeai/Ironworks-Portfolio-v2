@@ -11,7 +11,7 @@ export default function Lightbox() {
       document.querySelectorAll(".lightbox-trigger").forEach((trigger) => {
         trigger.addEventListener("click", function(this: HTMLElement, e: Event) {
           e.preventDefault();
-          images = Array.from(document.querySelectorAll(".lightbox-trigger img")).map(img => (img as HTMLImageElement).src);
+          images = Array.from(document.querySelectorAll(".lightbox-trigger img")).map(img => (img as HTMLImageElement).dataset.full || (img as HTMLImageElement).src);
           currentIndex = Array.from(document.querySelectorAll(".lightbox-trigger")).indexOf(this);
           updateLightbox();
         });
