@@ -135,7 +135,7 @@ export function PortfolioSection() {
               variants={itemVariants}
               className="gallery-item"
             >
-              <img className="content-image" src="/thumbnails/Relaxing-Blob-v2.jpg" data-full="/Relaxing-Blob-v2.jpg" alt="Relaxing Blob" />
+              <img className="content-image" src="/Relaxing-Blob-v2.jpg" data-full="/Relaxing-Blob-v2.jpg" alt="Relaxing Blob" />
             </motion.a>
 
             <motion.a 
