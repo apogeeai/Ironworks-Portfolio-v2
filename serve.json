@@ -1,15 +1,13 @@
-
 {
-  "public": "out",
-  "cleanUrls": true,
   "rewrites": [
-    {
-      "source": "/openvp",
-      "destination": "/openvp.html"
-    },
+    { "source": "/**", "destination": "/index.html" }
+  ],
+  "headers": [
     {
       "source": "/**",
-      "destination": "/index.html"
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store, no-cache, must-revalidate" }
+      ]
     }
   ]
-}
+} 
