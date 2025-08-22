@@ -1,4 +1,6 @@
 
+import Link from 'next/link';
+
 export default function OpenVPPage() {
   return (
     <div className="min-h-screen bg-gray-50 py-32 px-4">
@@ -50,12 +52,12 @@ export default function OpenVPPage() {
           </div>
           
           <div className="mt-8 text-center">
-            <a 
+            <Link 
               href="/" 
               className="text-blue-600 hover:text-blue-800 underline"
             >
               ← Back to Home
-            </a>
+            </Link>
           </div>
         </div>
       </div>
