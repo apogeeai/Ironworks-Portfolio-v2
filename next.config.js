@@ -5,9 +5,8 @@ const nextConfig = {
     ignoreDuringBuilds: true,
   },
   images: { unoptimized: true },
-  trailingSlash: true,
-  basePath: '',
-  generateBuildId: () => 'build',
+  trailingSlash: false,
+  distDir: 'out',
 };
 
 module.exports = nextConfig;
