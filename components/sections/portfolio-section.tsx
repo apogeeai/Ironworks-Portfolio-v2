@@ -112,12 +112,12 @@ export function PortfolioSection() {
             </motion.a>
 
             <motion.a 
-              href="https://synaptivesounds.com/" 
+              href="http://ai-rig.apogeeai.co/" 
               target="_blank" 
               variants={itemVariants}
               className="gallery-item"
             >
-              <img className="content-image" src="/thumbnails/Synaptive-Sounds.png" data-full="/Synaptive-Sounds.png" alt="Synaptive Sounds" />
+              <img className="content-image" src="/thumbnails/AI-CEO.png" data-full="/AI-CEO.jpg" alt="AI CEO" />
             </motion.a>
 
             <motion.a 
