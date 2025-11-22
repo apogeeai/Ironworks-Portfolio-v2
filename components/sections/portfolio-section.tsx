@@ -95,8 +95,9 @@ export function PortfolioSection() {
             </motion.a>
 
             <motion.a 
-              href="#" 
-              className="gallery-item lightbox-trigger" 
+              href="https://apogeeintelligence.ai/" 
+              target="_blank"
+              className="gallery-item" 
               variants={itemVariants}
             >
               <img className="content-image" src="/thumbnails/Apogee-Intelligence.png" data-full="/Apogee-Intelligence.png" alt="Apogee Intelligence" />
