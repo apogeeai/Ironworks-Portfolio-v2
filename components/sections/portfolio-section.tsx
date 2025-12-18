@@ -118,7 +118,7 @@ export function PortfolioSection() {
                 variants={itemVariants}
                 className="gallery-item"
               >
-                <img className="content-image" src="/thumbnails/AI-CEO-v2.png" data-full="/AI-CEO.jpg" alt="AI CEO" />
+                <img className="content-image" src="/thumbnails/AI-CEO-v2.jpg" data-full="/AI-CEO.jpg" alt="AI CEO" />
               </motion.a>
  
               <motion.a 
