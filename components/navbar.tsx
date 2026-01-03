@@ -81,7 +81,7 @@ export function Navbar() {
                 <motion.a
                   key={link.href}
                   href={link.href}
-                  className="text-gray-700 hover:text-indigo-600 px-2 py-1 text-sm uppercase tracking-wider relative transition-colors duration-200"
+                  className="text-gray-700 hover:text-[#569196] px-2 py-1 text-sm uppercase tracking-wider relative transition-colors duration-200"
                   onClick={(e) => handleNavClick(e, link.href)}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -97,7 +97,7 @@ export function Navbar() {
               variant="ghost"
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-indigo-600"
+              className="text-gray-700 hover:text-[#569196]"
             >
               <Menu className="h-6 w-6" />
             </Button>
@@ -119,7 +119,7 @@ export function Navbar() {
                 <motion.a
                   key={link.href}
                   href={link.href}
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-indigo-50 rounded-md"
+                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-[#569196] hover:bg-[#569196]/5 rounded-md"
                   onClick={(e) => {
                     handleNavClick(e, link.href);
                     setIsOpen(false);

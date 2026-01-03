@@ -60,7 +60,7 @@ export function TestimonialsSection() {
   }, []);
 
   return (
-    <div className="py-32 px-4 bg-indigo-900 text-white relative overflow-hidden" ref={sectionRef}>
+    <div className="py-32 px-4 bg-[#569196] text-white relative overflow-hidden" ref={sectionRef}>
       <div className="absolute top-0 left-0 w-full h-full opacity-10">
         <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="w-full h-full">
           <pattern id="grid" width="8" height="8" patternUnits="userSpaceOnUse">
@@ -75,17 +75,17 @@ export function TestimonialsSection() {
           "text-center mb-16",
           isVisible && "opacity-100 transform-none"
         )}>
-          <span className="uppercase text-sm font-bold tracking-widest text-indigo-300 mb-3 inline-block">
+          <span className="uppercase text-sm font-bold tracking-widest text-white/80 mb-3 inline-block">
             Testimonials
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             What Our Clients Say
           </h2>
-          <div className="h-1 w-24 bg-indigo-300 mx-auto rounded" />
+          <div className="h-1 w-24 bg-white/40 mx-auto rounded" />
         </div>
 
         <div className="relative">
-          <Quote className="absolute top-0 left-0 w-16 h-16 text-indigo-600 opacity-20 transform -translate-x-1/2 -translate-y-1/2" />
+          <Quote className="absolute top-0 left-0 w-16 h-16 text-white opacity-20 transform -translate-x-1/2 -translate-y-1/2" />
           
           <div className="relative">
             {testimonials.map((testimonial, index) => (
@@ -98,18 +98,18 @@ export function TestimonialsSection() {
                 )}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <p className="text-xl md:text-2xl italic text-indigo-100 leading-relaxed mb-8">
+                <p className="text-xl md:text-2xl italic text-white leading-relaxed mb-8">
                   "{testimonial.quote}"
                 </p>
                 <div className="flex items-center justify-center">
                   <img
                     src={testimonial.image}
                     alt={testimonial.author}
-                    className="w-16 h-16 rounded-full object-cover border-4 border-indigo-600"
+                    className="w-16 h-16 rounded-full object-cover border-4 border-white/20"
                   />
                   <div className="ml-4 text-left">
                     <h4 className="font-semibold">{testimonial.author}</h4>
-                    <p className="text-indigo-300 text-sm">{testimonial.role}</p>
+                    <p className="text-white/70 text-sm">{testimonial.role}</p>
                   </div>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export function TestimonialsSection() {
                 key={index}
                 className={cn(
                   "w-2 h-2 rounded-full transition-all",
-                  index === activeIndex ? "bg-indigo-300 w-8" : "bg-indigo-600/30"
+                  index === activeIndex ? "bg-white w-8" : "bg-white/30"
                 )}
                 onClick={() => setActiveIndex(index)}
                 aria-label={`Go to testimonial ${index + 1}`}
