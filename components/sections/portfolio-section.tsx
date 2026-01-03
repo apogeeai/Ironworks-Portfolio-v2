@@ -86,7 +86,7 @@ export function PortfolioSection() {
             animate={isVisible ? "visible" : "hidden"}
           >
             <motion.a
-              href="https://labs.apoegeai.co/"
+              href="https://saleslab.apoegeai.co/"
               target="_blank"
               variants={itemVariants}
               className="gallery-item"
