@@ -84,7 +84,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={cn(inter.className, "min-h-screen bg-[#f8f9fa] overflow-x-hidden")}>
+      <body className={cn(inter.className, "min-h-screen bg-[#f8f9fa] overflow-x-hidden font-sans")}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
