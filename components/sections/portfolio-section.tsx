@@ -65,13 +65,13 @@ export function PortfolioSection() {
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
-          <span className="uppercase text-sm font-bold tracking-widest text-[#569196] mb-3 inline-block">
+          <span className="uppercase text-sm font-bold tracking-widest text-indigo-600 mb-3 inline-block">
             My Work
           </span>
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
             Featured Projects
           </h2>
-          <div className="h-1 w-24 bg-[#569196] mx-auto rounded" />
+          <div className="h-1 w-24 bg-indigo-600 mx-auto rounded" />
           <p className="text-gray-600 max-w-2xl mx-auto mt-6 text-lg">
             A curated selection of my most impactful and visually stunning work
             across various styles and contexts.
@@ -86,7 +86,7 @@ export function PortfolioSection() {
             animate={isVisible ? "visible" : "hidden"}
           >
             <motion.a
-              href="https://saleslab.apoegeai.co/"
+              href="https://saleslab.apogeeai.co/"
               target="_blank"
               variants={itemVariants}
               className="gallery-item"
