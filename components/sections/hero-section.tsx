@@ -92,7 +92,7 @@ export function HeroSection() {
           >
             Creative <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#569196] via-[#7abebc] to-[#a0d9d6] animate-pulse-slow">
-              Web Solutions
+              Web <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#569196] to-[#a0d9d6] animate-pulse-slow">Solutions</span>
             </span>
           </motion.h1>
 
