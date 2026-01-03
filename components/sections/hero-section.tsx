@@ -91,8 +91,8 @@ export function HeroSection() {
             transition={{ delay: 0.5, duration: 0.7 }}
           >
             Creative <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#569196] via-[#7abebc] to-[#a0d9d6] animate-pulse-slow">
-              Web <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#569196] to-[#a0d9d6] animate-pulse-slow">Solutions</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00ecff] via-[#7abebc] to-[#a0d9d6] animate-pulse-slow">
+              Web Solutions
             </span>
           </motion.h1>
 
