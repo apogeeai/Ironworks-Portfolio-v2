@@ -51,20 +51,25 @@ export function HeroSection() {
 
   return (
     <div className="relative min-h-screen flex items-center" id="home">
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 overflow-hidden">
         <motion.div 
           className="w-full h-full"
-          initial={{ opacity: 0, scale: 1.05 }}
-          animate={{ opacity: 1, scale: 1 }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
         >
-          <img
-            src="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80"
-            alt="Hero background"
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
             className="w-full h-full object-cover"
-          />
+            poster="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80"
+          >
+            <source src="/video/IWI-BG-Video-v3.mp4" type="video/mp4" />
+          </video>
         </motion.div>
-        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-purple-900/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-[#569196]/40" />
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-32 mt-16">
@@ -86,7 +91,7 @@ export function HeroSection() {
             transition={{ delay: 0.5, duration: 0.7 }}
           >
             Creative <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-300">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#569196] to-[#7abebc]">
               Web Solutions
             </span>
           </motion.h1>
@@ -107,7 +112,7 @@ export function HeroSection() {
             transition={{ delay: 0.9, duration: 0.7 }}
           >
             <motion.button
-              className="inline-flex items-center justify-center text-sm font-medium h-11 rounded-md px-8 bg-indigo-600 text-white hover:bg-indigo-700 shadow-lg shadow-indigo-600/20 group"
+              className="inline-flex items-center justify-center text-sm font-medium h-11 rounded-md px-8 bg-[#569196] text-white hover:bg-[#45767a] shadow-lg shadow-[#569196]/20 group"
               onClick={(e) => handleScrollToSection(e, "#portfolio")}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
