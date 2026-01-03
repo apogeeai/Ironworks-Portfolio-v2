@@ -5,6 +5,7 @@ import { ArrowDown, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
+import { MorphingText } from "@/components/ui/liquid-text";
 
 // Easing function - easeInOutCubic
 const easeInOutCubic = (t: number) => 
@@ -85,15 +86,23 @@ export function HeroSection() {
           </motion.div>
 
           <motion.h1 
-            className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight"
+            className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight min-h-[1.2em] relative"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.7 }}
           >
             Creative <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#569196] via-[#7abebc] to-[#a0d9d6] animate-pulse-slow">
-              Web <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#569196] to-[#a0d9d6] animate-pulse-slow">Solutions</span>
-            </span>
+            <MorphingText 
+              texts={[
+                "Web Solutions",
+                "Demand Generation",
+                "Web Development",
+                "Graphic Design",
+                "AI Automation",
+                "Go to Market Planning"
+              ]}
+              className="text-transparent bg-clip-text bg-gradient-to-r from-[#569196] via-[#7abebc] to-[#a0d9d6] py-2"
+            />
           </motion.h1>
 
           <motion.p 
