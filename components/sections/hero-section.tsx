@@ -91,7 +91,7 @@ export function HeroSection() {
             transition={{ delay: 0.5, duration: 0.7 }}
           >
             Creative <br className="hidden sm:block" />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#569196] to-[#7abebc]">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#569196] via-[#7abebc] to-[#a0d9d6] animate-pulse-slow">
               Web Solutions
             </span>
           </motion.h1>
@@ -112,7 +112,7 @@ export function HeroSection() {
             transition={{ delay: 0.9, duration: 0.7 }}
           >
             <motion.button
-              className="inline-flex items-center justify-center text-sm font-medium h-11 rounded-md px-8 bg-[#569196] text-white hover:bg-[#45767a] shadow-lg shadow-[#569196]/20 group"
+              className="inline-flex items-center justify-center text-sm font-medium h-11 rounded-md px-8 bg-[#965b56] text-white hover:bg-[#7a4945] shadow-lg shadow-[#965b56]/20 group"
               onClick={(e) => handleScrollToSection(e, "#portfolio")}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
