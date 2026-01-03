@@ -92,17 +92,19 @@ export function HeroSection() {
             transition={{ delay: 0.5, duration: 0.7 }}
           >
             Creative <br className="hidden sm:block" />
-            <MorphingText 
-              texts={[
-                "Web Solutions",
-                "Demand Generation",
-                "Web Development",
-                "Graphic Design",
-                "AI Automation",
-                "Go to Market Planning"
-              ]}
-              className="text-transparent bg-clip-text bg-gradient-to-r from-[#569196] via-[#7abebc] to-[#a0d9d6] py-2"
-            />
+            <div className="relative h-[1.2em] w-full">
+              <MorphingText 
+                texts={[
+                  "Web Solutions",
+                  "Demand Generation",
+                  "Web Development",
+                  "Graphic Design",
+                  "AI Automation",
+                  "Go to Market Planning"
+                ]}
+                className="text-transparent bg-clip-text bg-gradient-to-r from-[#569196] via-[#7abebc] to-[#a0d9d6] py-2 absolute inset-0"
+              />
+            </div>
           </motion.h1>
 
           <motion.p 
