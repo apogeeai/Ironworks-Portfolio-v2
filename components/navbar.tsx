@@ -5,10 +5,12 @@ import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
+import Link from "next/link";
 
 const navLinks = [
   { href: "#home", label: "Home" },
   { href: "#portfolio", label: "Portfolio" },
+  { href: "/resume", label: "Resume", isPage: true },
 ];
 
 // Easing function - easeInOutCubic
@@ -78,16 +80,28 @@ export function Navbar() {
           <div className="hidden md:block">
             <div className="flex items-center space-x-8">
               {navLinks.map((link) => (
-                <motion.a
-                  key={link.href}
-                  href={link.href}
-                  className="text-gray-700 hover:text-[#569196] px-2 py-1 text-sm uppercase tracking-wider relative transition-colors duration-200"
-                  onClick={(e) => handleNavClick(e, link.href)}
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  {link.label}
-                </motion.a>
+                link.isPage ? (
+                  <Link key={link.href} href={link.href}>
+                    <motion.span
+                      className="text-gray-700 hover:text-[#569196] px-2 py-1 text-sm uppercase tracking-wider relative transition-colors duration-200 cursor-pointer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      {link.label}
+                    </motion.span>
+                  </Link>
+                ) : (
+                  <motion.a
+                    key={link.href}
+                    href={link.href}
+                    className="text-gray-700 hover:text-[#569196] px-2 py-1 text-sm uppercase tracking-wider relative transition-colors duration-200"
+                    onClick={(e) => handleNavClick(e, link.href)}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    {link.label}
+                  </motion.a>
+                )
               ))}
             </div>
           </div>
@@ -116,19 +130,31 @@ export function Navbar() {
           >
             <div className="px-2 pt-2 pb-3 space-y-1">
               {navLinks.map((link) => (
-                <motion.a
-                  key={link.href}
-                  href={link.href}
-                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-[#569196] hover:bg-[#569196]/5 rounded-md"
-                  onClick={(e) => {
-                    handleNavClick(e, link.href);
-                    setIsOpen(false);
-                  }}
-                  whileHover={{ x: 5 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  {link.label}
-                </motion.a>
+                link.isPage ? (
+                  <Link key={link.href} href={link.href} onClick={() => setIsOpen(false)}>
+                    <motion.span
+                      className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-[#569196] hover:bg-[#569196]/5 rounded-md cursor-pointer"
+                      whileHover={{ x: 5 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      {link.label}
+                    </motion.span>
+                  </Link>
+                ) : (
+                  <motion.a
+                    key={link.href}
+                    href={link.href}
+                    className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-[#569196] hover:bg-[#569196]/5 rounded-md"
+                    onClick={(e) => {
+                      handleNavClick(e, link.href);
+                      setIsOpen(false);
+                    }}
+                    whileHover={{ x: 5 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    {link.label}
+                  </motion.a>
+                )
               ))}
             </div>
           </motion.div>
