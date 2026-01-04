@@ -66,8 +66,11 @@ export function HeroSection() {
             preload="auto"
             className="w-full h-full object-cover"
             poster="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80"
+            style={{ pointerEvents: 'none' }}
+            disablePictureInPicture
+            disableRemotePlayback
           >
-            <source src="/video/IWI-BG-Video-v3.mp4?v=2" type="video/mp4" />
+            <source src="/video/IWI-BG-Video-v3.mp4?v=4" type="video/mp4" />
           </video>
         </motion.div>
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-[#569196]/40" />
