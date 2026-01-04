@@ -74,9 +74,9 @@ const experiences = [
     color: "from-[#3d6b6f] to-[#569196]",
     iconColor: "#569196",
     highlights: [
-      "Direct post-carve-out launch of Adobe Marketo with ON24, Bizzabo, and Salesforce integrations",
+      "Directed post-carve-out launch of Adobe Marketo with ON24, Bizzabo, and Salesforce integrations",
       "Lead 6 specialists delivering integrated multi-channel campaigns (email, web, ABM, webinars, digital ads)",
-      "Build real-time Power BI dashboards tracking pipeline, webinar attendance, and ROI",
+      "Working on creating real-time Power BI dashboards tracking pipeline, webinar attendance, and ROI",
       "Implement segmentation, A/B testing, and predictive models to optimize cross-sell/upsell strategies",
     ],
   },
