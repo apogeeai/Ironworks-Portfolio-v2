@@ -78,7 +78,7 @@ export function PortfolioSection() {
           </p>
         </motion.div>
 
-        <div id="wrapper">
+        <div id="wrapper" className="-mt-[10px]">
           <motion.div
             className="gallery"
             variants={containerVariants}
