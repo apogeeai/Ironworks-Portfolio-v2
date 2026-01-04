@@ -53,7 +53,7 @@ export function HeroSection() {
     <div className="relative min-h-screen flex items-center" id="home">
       <div className="absolute inset-0 overflow-hidden">
         <motion.div 
-          className="w-full h-full"
+          className="w-full h-full bg-[#569196]"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
@@ -65,7 +65,6 @@ export function HeroSection() {
             playsInline
             preload="auto"
             className="w-full h-full object-cover"
-            poster="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80"
             style={{ pointerEvents: 'none' }}
             disablePictureInPicture
             disableRemotePlayback
