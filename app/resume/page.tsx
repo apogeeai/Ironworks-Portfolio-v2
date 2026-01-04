@@ -19,6 +19,7 @@ import {
   ArrowRight
 } from "lucide-react";
 import Link from "next/link";
+import { AuroraBackground } from "@/components/ui/aurora-background";
 
 // Skill data for charts - all shades of brand teal
 const skills = [
@@ -285,10 +286,10 @@ export default function ResumePage() {
               </div>
             </motion.div>
 
-            {/* Name and intro - RIGHT, wraps around headshot */}
+            {/* Name and intro - Full width now */}
             <motion.div 
               variants={fadeInUp}
-              className="lg:col-span-2"
+              className="lg:col-span-3 text-center lg:text-left"
             >
               <motion.span 
                 initial={{ opacity: 0, y: 20 }}
@@ -380,8 +381,6 @@ export default function ResumePage() {
                   </motion.span>
                 </motion.a>
               </motion.div>
-            </motion.div>
-          </div>
         </motion.section>
 
         {/* Stats Section */}
