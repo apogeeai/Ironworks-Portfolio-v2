@@ -112,7 +112,7 @@ export function HeroSection() {
             transition={{ delay: 0.9, duration: 0.7 }}
           >
             <motion.button
-              className="inline-flex items-center justify-center text-sm font-medium h-11 rounded-md px-8 bg-[#ff6347] text-white hover:bg-[#e5533d] shadow-lg shadow-[#ff6347]/20 group"
+              className="inline-flex items-center justify-center text-sm font-medium h-11 rounded-md px-8 bg-[#84CC16] text-gray-900 hover:bg-[#65a30d] shadow-lg shadow-[#84CC16]/30 group"
               onClick={(e) => handleScrollToSection(e, "#portfolio")}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

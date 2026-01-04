@@ -121,7 +121,7 @@ export function PortfolioSection() {
             >
               <img
                 className="content-image"
-                src="/thumbnails/AR-Dashboard-v2.png"
+                src="/thumbnails/AR-Dashboard-v3.png"
                 data-full="/AR-Dashboard-v2.png"
                 alt="AR Dashboard"
               />

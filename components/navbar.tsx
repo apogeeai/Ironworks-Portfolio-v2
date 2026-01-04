@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -8,8 +9,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 
 const navLinks = [
-  { href: "#home", label: "Home" },
-  { href: "#portfolio", label: "Portfolio" },
+  { href: "/#home", label: "Home", hash: "#home" },
+  { href: "/#portfolio", label: "Portfolio", hash: "#portfolio" },
   { href: "/resume", label: "Resume", isPage: true },
 ];
 
@@ -20,6 +21,8 @@ const easeInOutCubic = (t: number) =>
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const pathname = usePathname();
+  const isHomePage = pathname === "/";
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,22 +33,24 @@ export function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, link: typeof navLinks[0]) => {
+    // If not on home page, let the default link behavior work (navigate to /#section)
+    if (!isHomePage) {
+      return;
+    }
+    
+    // On home page, do smooth scroll
     e.preventDefault();
-    const element = document.querySelector(href);
+    const element = document.querySelector(link.hash || link.href);
     
     if (element) {
-      // Get the element's position relative to the viewport
       const elementPosition = element.getBoundingClientRect().top;
-      // Get the current scroll position
       const startPosition = window.pageYOffset;
-      // Calculate distance to scroll
       const distance = elementPosition;
       
-      const duration = 1000; // Duration in ms (1 second)
+      const duration = 1000;
       let start: number | null = null;
       
-      // Animation frame recursive function
       const animateScroll = (timestamp: number) => {
         if (!start) start = timestamp;
         const progress = timestamp - start;
@@ -91,16 +96,16 @@ export function Navbar() {
                     </motion.span>
                   </Link>
                 ) : (
-                  <motion.a
-                    key={link.href}
-                    href={link.href}
-                    className="text-gray-700 hover:text-[#569196] px-2 py-1 text-sm uppercase tracking-wider relative transition-colors duration-200"
-                    onClick={(e) => handleNavClick(e, link.href)}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    {link.label}
-                  </motion.a>
+                <motion.a
+                  key={link.href}
+                  href={link.href}
+                  className="text-gray-700 hover:text-[#569196] px-2 py-1 text-sm uppercase tracking-wider relative transition-colors duration-200"
+                  onClick={(e) => handleNavClick(e, link)}
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {link.label}
+                </motion.a>
                 )
               ))}
             </div>
@@ -141,19 +146,19 @@ export function Navbar() {
                     </motion.span>
                   </Link>
                 ) : (
-                  <motion.a
-                    key={link.href}
-                    href={link.href}
-                    className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-[#569196] hover:bg-[#569196]/5 rounded-md"
-                    onClick={(e) => {
-                      handleNavClick(e, link.href);
-                      setIsOpen(false);
-                    }}
-                    whileHover={{ x: 5 }}
-                    whileTap={{ scale: 0.95 }}
-                  >
-                    {link.label}
-                  </motion.a>
+                <motion.a
+                  key={link.href}
+                  href={link.href}
+                  className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-[#569196] hover:bg-[#569196]/5 rounded-md"
+                  onClick={(e) => {
+                    handleNavClick(e, link);
+                    setIsOpen(false);
+                  }}
+                  whileHover={{ x: 5 }}
+                  whileTap={{ scale: 0.95 }}
+                >
+                  {link.label}
+                </motion.a>
                 )
               ))}
             </div>
