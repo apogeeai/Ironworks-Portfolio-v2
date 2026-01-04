@@ -430,7 +430,7 @@ export default function ResumePage() {
             {/* Contact chips */}
             <motion.div
               variants={staggerContainer}
-              className="flex flex-wrap gap-3 items-center"
+              className="flex flex-wrap gap-3 items-center mb-8"
             >
               <motion.a
                 variants={popIn}
@@ -439,15 +439,6 @@ export default function ResumePage() {
               >
                 <Mail className="w-4 h-4" />
                 Adam.Carfagna@gmail.com
-              </motion.a>
-              <motion.a
-                variants={popIn}
-                href="/Adam-Carfagna-Resume-FINAL-October.pdf"
-                download
-                className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#569196] to-[#7bc4c9] text-white rounded-full font-medium text-sm"
-              >
-                <Download className="w-4 h-4" />
-                Download Resume
               </motion.a>
               <motion.a
                 variants={popIn}
@@ -465,6 +456,18 @@ export default function ResumePage() {
                 <MapPin className="w-4 h-4 text-[#569196]" />
                 Saugus, MA
               </motion.span>
+            </motion.div>
+
+            {/* Main CTA */}
+            <motion.div variants={fadeInUp}>
+              <motion.a
+                href="/Adam-Carfagna-Resume-FINAL-October.pdf"
+                download
+                className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-[#84CC16] to-[#65a30d] text-white rounded-full font-bold shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 group"
+              >
+                <Download className="w-6 h-6 group-hover:bounce-slow" />
+                Download Full Resume (PDF)
+              </motion.a>
             </motion.div>
           </motion.div>
         </motion.section>
