@@ -442,6 +442,15 @@ export default function ResumePage() {
               </motion.a>
               <motion.a
                 variants={popIn}
+                href="/Adam-Carfagna-Resume-FINAL-October.pdf"
+                download
+                className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#569196] to-[#7bc4c9] text-white rounded-full font-medium text-sm"
+              >
+                <Download className="w-4 h-4" />
+                Download Resume
+              </motion.a>
+              <motion.a
+                variants={popIn}
                 href="https://linkedin.com/in/adamcarfagna"
                 target="_blank"
                 className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#0077b5] to-[#0066a0] text-white rounded-full font-medium text-sm"
@@ -456,15 +465,6 @@ export default function ResumePage() {
                 <MapPin className="w-4 h-4 text-[#569196]" />
                 Saugus, MA
               </motion.span>
-              <motion.a
-                variants={popIn}
-                href="/Adam-Carfagna-Resume-FINAL-October.pdf"
-                download
-                className="flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-[#569196] to-[#7bc4c9] text-white rounded-full font-medium text-sm"
-              >
-                <Download className="w-4 h-4" />
-                Download Resume
-              </motion.a>
             </motion.div>
           </motion.div>
         </motion.section>
