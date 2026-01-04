@@ -70,7 +70,7 @@ const experiences = [
     title: "Digital Marketing Manager",
     company: "Candescent",
     period: "06/2025 - Present",
-    location: "Atlanta, GA",
+    location: "Atlanta, GA (Remote)",
     color: "from-[#3d6b6f] to-[#569196]",
     iconColor: "#569196",
     highlights: [
