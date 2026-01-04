@@ -63,6 +63,7 @@ export function HeroSection() {
             loop
             muted
             playsInline
+            preload="auto"
             className="w-full h-full object-cover"
             poster="https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&q=80"
           >
