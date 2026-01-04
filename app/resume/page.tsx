@@ -270,7 +270,7 @@ function ExperienceCard({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className="relative mb-12 last:mb-0"
+      className={`relative mb-8 last:mb-0 ${index > 0 ? "lg:-mt-24" : ""}`}
     >
       {/* Timeline year label */}
       <motion.div
@@ -292,11 +292,11 @@ function ExperienceCard({
         <div className="relative group">
           {/* Glowing background effect */}
           <div
-            className={`absolute -inset-1 bg-gradient-to-r ${experience.color} rounded-3xl blur-lg opacity-25 group-hover:opacity-40 transition-opacity duration-500`}
+            className={`absolute -inset-1 bg-gradient-to-r ${experience.color} rounded-[10px] blur-lg opacity-25 group-hover:opacity-40 transition-opacity duration-500`}
           />
 
           {/* Card content */}
-          <div className="relative bg-white rounded-2xl p-6 border border-[#569196]/10">
+          <div className="relative bg-white rounded-[10px] p-6 border border-[#569196]/10">
             {/* Company badge - floating */}
             <motion.div
               initial={{ opacity: 0, y: -20 }}
@@ -456,7 +456,6 @@ export default function ResumePage() {
                 <MapPin className="w-4 h-4 text-[#569196]" />
                 Saugus, MA
               </motion.span>
-              <div className="flex-grow" />
               <motion.a
                 variants={popIn}
                 href="/Adam-Carfagna-Resume-FINAL-October.pdf"
@@ -485,7 +484,7 @@ export default function ResumePage() {
                 whileInView={{ opacity: 1, y: 0, rotate: 0 }}
                 transition={{ duration: 0.4, delay: i * 0.1 }}
                 viewport={{ once: true }}
-                className={`relative overflow-hidden rounded-2xl p-6 bg-gradient-to-br ${stat.gradient} text-white`}
+                className={`relative overflow-hidden rounded-[10px] p-6 bg-gradient-to-br ${stat.gradient} text-white`}
               >
                 <stat.icon className="w-10 h-10 mb-3 opacity-90" />
                 <div className="text-4xl font-black mb-1">{stat.value}</div>
@@ -539,7 +538,7 @@ export default function ResumePage() {
             viewport={{ once: true }}
             className="flex items-center gap-4 mb-12 relative z-10"
           >
-            <div className="p-3 bg-gradient-to-br from-[#3d6b6f] to-[#569196] rounded-2xl text-white">
+            <div className="p-3 bg-gradient-to-br from-[#3d6b6f] to-[#569196] rounded-[10px] text-white">
               <Briefcase className="w-7 h-7" />
             </div>
             <h2 className="text-3xl font-black text-gray-900">Experience</h2>
@@ -581,7 +580,7 @@ export default function ResumePage() {
             viewport={{ once: true }}
             className="flex items-center gap-4 mb-8"
           >
-            <div className="p-3 bg-gradient-to-br from-[#569196] to-[#7bc4c9] rounded-2xl text-white">
+            <div className="p-3 bg-gradient-to-br from-[#569196] to-[#7bc4c9] rounded-[10px] text-white">
               <BarChart3 className="w-7 h-7" />
             </div>
             <h2 className="text-3xl font-black text-gray-900">
@@ -589,7 +588,7 @@ export default function ResumePage() {
             </h2>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-x-8 gap-y-1 bg-white/60 backdrop-blur-sm rounded-3xl p-8 border border-[#569196]/20">
+          <div className="grid md:grid-cols-2 gap-x-8 gap-y-1 bg-white/60 backdrop-blur-sm rounded-[10px] p-8 border border-[#569196]/20">
             {skills.map((skill, index) => (
               <SkillBar key={skill.name} skill={skill} index={index} />
             ))}
@@ -609,7 +608,7 @@ export default function ResumePage() {
             viewport={{ once: true }}
             className="flex items-center gap-4 mb-8"
           >
-            <div className="p-3 bg-gradient-to-br from-[#4a8084] to-[#6ba8ad] rounded-2xl text-white">
+            <div className="p-3 bg-gradient-to-br from-[#4a8084] to-[#6ba8ad] rounded-[10px] text-white">
               <Globe className="w-7 h-7" />
             </div>
             <h2 className="text-3xl font-black text-gray-900">
@@ -681,7 +680,7 @@ export default function ResumePage() {
             viewport={{ once: true }}
             className="flex items-center gap-4 mb-8"
           >
-            <div className="p-3 bg-gradient-to-br from-[#3d6b6f] to-[#5c9da2] rounded-2xl text-white">
+            <div className="p-3 bg-gradient-to-br from-[#3d6b6f] to-[#5c9da2] rounded-[10px] text-white">
               <GraduationCap className="w-7 h-7" />
             </div>
             <h2 className="text-3xl font-black text-gray-900">
@@ -694,7 +693,7 @@ export default function ResumePage() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="relative overflow-hidden rounded-2xl p-6 bg-gradient-to-br from-[#3d6b6f] to-[#569196] text-white"
+              className="relative overflow-hidden rounded-[10px] p-6 bg-gradient-to-br from-[#3d6b6f] to-[#569196] text-white"
             >
               <GraduationCap className="w-12 h-12 mb-4 opacity-80" />
               <h3 className="text-xl font-bold mb-1">
@@ -714,7 +713,7 @@ export default function ResumePage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 }}
               viewport={{ once: true }}
-              className="relative overflow-hidden rounded-2xl p-6 bg-gradient-to-br from-[#569196] to-[#7bc4c9] text-white"
+              className="relative overflow-hidden rounded-[10px] p-6 bg-gradient-to-br from-[#569196] to-[#7bc4c9] text-white"
             >
               <Award className="w-12 h-12 mb-4 opacity-80" />
               <h3 className="text-xl font-bold mb-1">
@@ -736,7 +735,7 @@ export default function ResumePage() {
           viewport={{ once: true }}
           className="text-center py-12"
         >
-          <div className="relative overflow-hidden rounded-3xl p-12 bg-gradient-to-r from-[#2d5558] via-[#3d6b6f] to-[#2d5558]">
+          <div className="relative overflow-hidden rounded-[10px] p-12 bg-gradient-to-r from-[#2d5558] via-[#3d6b6f] to-[#2d5558]">
             {/* Animated gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-[#569196]/20 via-[#7bc4c9]/20 to-[#569196]/20 animate-pulse-slow" />
 
@@ -755,7 +754,7 @@ export default function ResumePage() {
                 target="_blank"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-3 px-10 py-5 bg-white text-[#569196] rounded-2xl font-bold text-lg"
+                className="inline-flex items-center gap-3 px-10 py-5 bg-white text-[#569196] rounded-[10px] font-bold text-lg"
               >
                 <Linkedin className="w-6 h-6" />
                 Connect on LinkedIn

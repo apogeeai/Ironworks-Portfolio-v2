@@ -170,7 +170,7 @@ export function PortfolioSection() {
             </motion.a>
 
             <motion.a
-              href="#"
+              href="javascript:void(0)"
               className="gallery-item lightbox-trigger"
               variants={itemVariants}
             >
@@ -183,7 +183,7 @@ export function PortfolioSection() {
             </motion.a>
 
             <motion.a
-              href="#"
+              href="javascript:void(0)"
               className="gallery-item lightbox-trigger"
               variants={itemVariants}
             >
@@ -196,7 +196,7 @@ export function PortfolioSection() {
             </motion.a>
 
             <motion.a
-              href="#"
+              href="javascript:void(0)"
               className="gallery-item lightbox-trigger"
               variants={itemVariants}
             >
@@ -209,7 +209,7 @@ export function PortfolioSection() {
             </motion.a>
 
             <motion.a
-              href="#"
+              href="javascript:void(0)"
               className="gallery-item lightbox-trigger"
               variants={itemVariants}
             >
@@ -222,7 +222,7 @@ export function PortfolioSection() {
             </motion.a>
 
             <motion.a
-              href="#"
+              href="javascript:void(0)"
               className="gallery-item lightbox-trigger"
               variants={itemVariants}
             >
@@ -235,7 +235,7 @@ export function PortfolioSection() {
             </motion.a>
 
             <motion.a
-              href="#"
+              href="javascript:void(0)"
               className="gallery-item lightbox-trigger"
               variants={itemVariants}
             >

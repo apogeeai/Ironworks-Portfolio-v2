@@ -220,11 +220,23 @@ html {
 
 .gallery a {
   text-decoration: none;
+  display: block;
+  width: 355px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.gallery-item {
+  width: 355px;
+  height: 250px;
+  overflow: hidden;
 }
 
 .content-image {
   width: 355px;
   height: 250px;
+  max-width: 355px;
+  max-height: 250px;
   object-fit: cover;
   border: 1px solid #a9a9a9;
   border-radius: 5px;
