@@ -378,15 +378,15 @@ export default function ResumePage() {
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <motion.div
           style={{ y: backgroundY }}
-          className="absolute -top-1/3 -right-1/4 w-[900px] h-[900px] rounded-full bg-gradient-to-br from-[#569196]/30 via-[#7bc4c9]/20 to-transparent blur-3xl"
+          className="absolute -top-1/3 -right-1/4 w-[900px] h-[900px] rounded-full bg-gradient-to-br from-[#569196]/45 via-[#7bc4c9]/30 to-transparent blur-3xl"
         />
         <motion.div
           style={{ y: backgroundY }}
-          className="absolute top-1/2 -left-1/4 w-[700px] h-[700px] rounded-full bg-gradient-to-tr from-[#3d6b6f]/30 via-[#569196]/20 to-transparent blur-3xl"
+          className="absolute top-1/2 -left-1/4 w-[700px] h-[700px] rounded-full bg-gradient-to-tr from-[#3d6b6f]/45 via-[#569196]/30 to-transparent blur-3xl"
         />
         <motion.div
           style={{ y: backgroundY }}
-          className="absolute -bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full bg-gradient-to-tl from-[#88d4d9]/25 via-[#6ba8ad]/15 to-transparent blur-3xl"
+          className="absolute -bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full bg-gradient-to-tl from-[#88d4d9]/40 via-[#6ba8ad]/25 to-transparent blur-3xl"
         />
       </div>
 
