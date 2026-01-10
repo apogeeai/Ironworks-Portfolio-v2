@@ -76,11 +76,11 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link href="/">
-              <img 
-                src="/IWI-v3.png" 
-                alt="Ironworks Interactive Logo" 
-                className="h-8 cursor-pointer"
-              />
+            <img 
+              src="/IWI-v3.png" 
+              alt="Ironworks Interactive Logo" 
+                className="h-[38.09px] cursor-pointer"
+            />
             </Link>
           </div>
 

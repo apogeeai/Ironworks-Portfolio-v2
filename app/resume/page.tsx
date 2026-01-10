@@ -176,13 +176,13 @@ const stats = [
   },
 ];
 
-// Animation variants
+// Animation variants - optimized for iOS performance
 const fadeInUp = {
-  hidden: { opacity: 0, y: 40 },
+  hidden: { opacity: 0, y: 20 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.4, ease: "easeOut" },
   },
 };
 
@@ -191,19 +191,18 @@ const staggerContainer = {
   visible: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.08,
-      delayChildren: 0.1,
+      staggerChildren: 0.05,
+      delayChildren: 0.05,
     },
   },
 };
 
 const popIn = {
-  hidden: { opacity: 0, scale: 0.8, rotate: -5 },
+  hidden: { opacity: 0, scale: 0.95 },
   visible: {
     opacity: 1,
     scale: 1,
-    rotate: 0,
-    transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.3, ease: "easeOut" },
   },
 };
 
@@ -216,10 +215,10 @@ function SkillBar({
 }) {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -30 }}
+      initial={{ opacity: 0, x: -20 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.4, delay: index * 0.08 }}
-      viewport={{ once: true }}
+      transition={{ duration: 0.3, delay: index * 0.05 }}
+      viewport={{ once: true, margin: "-50px" }}
       className="mb-5"
     >
       <div className="flex justify-between items-center mb-2">
@@ -235,12 +234,13 @@ function SkillBar({
           initial={{ width: 0 }}
           whileInView={{ width: `${skill.percentage}%` }}
           transition={{
-            duration: 0.8,
-            delay: index * 0.08,
-            ease: [0.22, 1, 0.36, 1],
+            duration: 0.6,
+            delay: index * 0.05,
+            ease: "easeOut",
           }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-50px" }}
           className={`h-full rounded-full bg-gradient-to-r ${skill.gradient}`}
+          style={{ willChange: "width" }}
         />
       </div>
     </motion.div>
@@ -266,18 +266,18 @@ function ExperienceCard({
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 60 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: index * 0.1 }}
-      viewport={{ once: true }}
+      transition={{ duration: 0.4, delay: index * 0.05 }}
+      viewport={{ once: true, margin: "-100px" }}
       className={`relative mb-8 last:mb-0 ${index > 0 ? "lg:-mt-24" : ""}`}
     >
       {/* Timeline year label */}
       <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
+        initial={{ opacity: 0, scale: 0.9 }}
         whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.4, delay: index * 0.1 + 0.1 }}
-        viewport={{ once: true }}
+        transition={{ duration: 0.3, delay: index * 0.05 + 0.05 }}
+        viewport={{ once: true, margin: "-100px" }}
         className="absolute left-1/2 -translate-x-1/2 top-6 z-30 hidden lg:block"
       >
         <div className="bg-gradient-to-r from-[#569196] to-[#7bc4c9] text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg">
@@ -299,10 +299,10 @@ function ExperienceCard({
           <div className="relative bg-white rounded-[10px] p-6 border border-[#569196]/10">
             {/* Company badge - floating */}
             <motion.div
-              initial={{ opacity: 0, y: -20 }}
+              initial={{ opacity: 0, y: -10 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 + 0.3 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: index * 0.05 + 0.1 }}
+              viewport={{ once: true, margin: "-50px" }}
               className={`absolute -top-4 ${isEven ? "left-6" : "right-6"} px-4 py-2 bg-gradient-to-r ${experience.color} text-white text-sm font-bold rounded-full shadow-lg`}
             >
               {experience.company}
@@ -336,13 +336,13 @@ function ExperienceCard({
                 {experience.highlights.map((highlight, i) => (
                   <motion.li
                     key={i}
-                    initial={{ opacity: 0, x: isEven ? -20 : 20 }}
+                    initial={{ opacity: 0, x: isEven ? -10 : 10 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{
-                      duration: 0.4,
-                      delay: index * 0.1 + i * 0.08,
+                      duration: 0.3,
+                      delay: index * 0.05 + i * 0.04,
                     }}
-                    viewport={{ once: true }}
+                    viewport={{ once: true, margin: "-20px" }}
                     className="flex items-start gap-3 text-gray-600"
                   >
                     <div
@@ -362,30 +362,32 @@ function ExperienceCard({
 
 export default function ResumePage() {
   const containerRef = useRef<HTMLDivElement>(null);
+  // Simplified scroll animation for better iOS performance
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"],
   });
 
-  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "30%"]);
+  // Reduced movement range for smoother performance
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
 
   return (
     <div
       ref={containerRef}
       className="min-h-screen bg-[#fafafa] pt-20 overflow-hidden"
     >
-      {/* Brand teal animated background */}
+      {/* Brand teal animated background - optimized for iOS */}
       <div className="fixed inset-0 overflow-hidden pointer-events-none">
         <motion.div
-          style={{ y: backgroundY }}
+          style={{ y: backgroundY, willChange: "transform" }}
           className="absolute -top-1/3 -right-1/4 w-[900px] h-[900px] rounded-full bg-gradient-to-br from-[#569196]/30 via-[#7bc4c9]/20 to-transparent blur-3xl"
         />
         <motion.div
-          style={{ y: backgroundY }}
+          style={{ y: backgroundY, willChange: "transform" }}
           className="absolute top-1/2 -left-1/4 w-[700px] h-[700px] rounded-full bg-gradient-to-tr from-[#3d6b6f]/30 via-[#569196]/20 to-transparent blur-3xl"
         />
         <motion.div
-          style={{ y: backgroundY }}
+          style={{ y: backgroundY, willChange: "transform" }}
           className="absolute -bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full bg-gradient-to-tl from-[#88d4d9]/25 via-[#6ba8ad]/15 to-transparent blur-3xl"
         />
       </div>
@@ -480,10 +482,10 @@ export default function ResumePage() {
             {stats.map((stat, i) => (
               <motion.div
                 key={stat.label}
-                initial={{ opacity: 0, y: 30, rotate: -3 }}
-                whileInView={{ opacity: 1, y: 0, rotate: 0 }}
-                transition={{ duration: 0.4, delay: i * 0.1 }}
-                viewport={{ once: true }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: i * 0.05 }}
+                viewport={{ once: true, margin: "-50px" }}
                 className={`relative overflow-hidden rounded-[10px] p-6 bg-gradient-to-br ${stat.gradient} text-white`}
               >
                 <stat.icon className="w-10 h-10 mb-3 opacity-90" />
@@ -533,9 +535,10 @@ export default function ResumePage() {
           </div>
 
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.3 }}
+            viewport={{ once: true, margin: "-50px" }}
             className="flex items-center gap-4 mb-12 relative z-10"
           >
             <div className="p-3 bg-gradient-to-br from-[#3d6b6f] to-[#569196] rounded-[10px] text-white">
@@ -603,9 +606,10 @@ export default function ResumePage() {
           className="mb-16"
         >
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.3 }}
+            viewport={{ once: true, margin: "-50px" }}
             className="flex items-center gap-4 mb-8"
           >
             <div className="p-3 bg-gradient-to-br from-[#4a8084] to-[#6ba8ad] rounded-[10px] text-white">
@@ -675,9 +679,10 @@ export default function ResumePage() {
           className="mb-16"
         >
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
+            initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            transition={{ duration: 0.3 }}
+            viewport={{ once: true, margin: "-50px" }}
             className="flex items-center gap-4 mb-8"
           >
             <div className="p-3 bg-gradient-to-br from-[#3d6b6f] to-[#5c9da2] rounded-[10px] text-white">
@@ -690,9 +695,10 @@ export default function ResumePage() {
 
           <div className="grid md:grid-cols-2 gap-4">
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: true, margin: "-50px" }}
               className="relative overflow-hidden rounded-[10px] p-6 bg-gradient-to-br from-[#3d6b6f] to-[#569196] text-white"
             >
               <GraduationCap className="w-12 h-12 mb-4 opacity-80" />
@@ -709,10 +715,10 @@ export default function ResumePage() {
             </motion.div>
 
             <motion.div
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.1 }}
-              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: 0.05 }}
+              viewport={{ once: true, margin: "-50px" }}
               className="relative overflow-hidden rounded-[10px] p-6 bg-gradient-to-br from-[#569196] to-[#7bc4c9] text-white"
             >
               <Award className="w-12 h-12 mb-4 opacity-80" />

@@ -141,13 +141,13 @@ export function HeroSection() {
       </div>
 
       <motion.div 
-        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white"
+        className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white z-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.5 }}
       >
         <motion.button
-          className="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 w-10 text-white"
+          className="inline-flex items-center justify-center rounded-md text-sm font-medium p-4 text-white touch-manipulation"
           onClick={(e) => handleScrollToSection(e, "#portfolio")}
           whileHover={{ y: 5 }}
           whileTap={{ scale: 0.9 }}
@@ -158,6 +158,7 @@ export function HeroSection() {
             duration: 2,
             repeatDelay: 0.5
           }}
+          style={{ minWidth: '48px', minHeight: '48px' }}
         >
           <ArrowDown className="h-6 w-6" />
         </motion.button>

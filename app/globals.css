@@ -240,9 +240,39 @@ html {
   object-fit: cover;
   border: 1px solid #a9a9a9;
   border-radius: 5px;
-  transition: transform 0.2s;
+  transition: transform 0.5s ease !important;
+  will-change: transform;
 }
 
-.content-image:hover {
-  transform: scale(1.05);
+.gallery-item:hover .content-image,
+a.gallery-item:hover .content-image {
+  transform: scale(1.05) !important;
+}
+
+/* iOS Performance Optimizations */
+@media (max-width: 768px) {
+  /* Reduce animation complexity on mobile */
+  [data-framer-motion] {
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+  }
+  
+  /* Optimize touch interactions */
+  button, a {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

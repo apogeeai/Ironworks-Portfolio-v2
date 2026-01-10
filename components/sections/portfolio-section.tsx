@@ -2,12 +2,13 @@
 
 import { useRef, useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Lightbox from "@/components/lightbox";
 
 export function PortfolioSection() {
   const sectionRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -26,6 +27,14 @@ export function PortfolioSection() {
 
     return () => observer.disconnect();
   }, []);
+
+  // Scroll animation for background
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end end"],
+  });
+
+  const backgroundY = useTransform(scrollYProgress, [0, 1], ["0%", "15%"]);
 
   // Animation variants
   const containerVariants = {
@@ -54,11 +63,27 @@ export function PortfolioSection() {
 
   return (
     <div
-      className="py-32 px-4 bg-gradient-to-b from-white to-gray-50"
+      className="py-32 px-4 bg-[#fafafa] relative overflow-hidden"
       id="portfolio"
       ref={sectionRef}
     >
-      <div className="max-w-7xl mx-auto">
+      {/* Animated background blobs */}
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <motion.div
+          style={{ y: backgroundY, willChange: "transform" }}
+          className="absolute -top-1/3 -right-1/4 w-[900px] h-[900px] rounded-full bg-gradient-to-br from-[#569196]/30 via-[#7bc4c9]/20 to-transparent blur-3xl"
+        />
+        <motion.div
+          style={{ y: backgroundY, willChange: "transform" }}
+          className="absolute top-1/2 -left-1/4 w-[700px] h-[700px] rounded-full bg-gradient-to-tr from-[#3d6b6f]/30 via-[#569196]/20 to-transparent blur-3xl"
+        />
+        <motion.div
+          style={{ y: backgroundY, willChange: "transform" }}
+          className="absolute -bottom-1/4 right-1/4 w-[500px] h-[500px] rounded-full bg-gradient-to-tl from-[#88d4d9]/25 via-[#6ba8ad]/15 to-transparent blur-3xl"
+        />
+      </div>
+
+      <div className="max-w-7xl mx-auto relative z-10" ref={containerRef}>
         <motion.div
           className="text-center mb-20"
           initial={{ opacity: 0, y: 20 }}
@@ -96,6 +121,7 @@ export function PortfolioSection() {
                 src="/thumbnails/Moden-Marketing-Dashboard.png"
                 data-full="/Moden-Marketing-Dashboard.png"
                 alt="Modern Marketing Dashboard"
+                style={{ transition: 'transform 0.5s ease' }}
               />
             </motion.a>
 
@@ -110,6 +136,7 @@ export function PortfolioSection() {
                 src="/thumbnails/Apogee-Intelligence.png"
                 data-full="/Apogee-Intelligence.png"
                 alt="Apogee Intelligence"
+                style={{ transition: 'transform 0.5s ease' }}
               />
             </motion.a>
 
@@ -124,6 +151,7 @@ export function PortfolioSection() {
                 src="/thumbnails/AR-Dashboard-v3.png"
                 data-full="/AR-Dashboard-v2.png"
                 alt="AR Dashboard"
+                style={{ transition: 'transform 0.5s ease' }}
               />
             </motion.a>
 
@@ -138,6 +166,7 @@ export function PortfolioSection() {
                 src="/thumbnails/AI-CEO-v2.jpg"
                 data-full="/AI-CEO.jpg"
                 alt="AI CEO"
+                style={{ transition: 'transform 0.5s ease' }}
               />
             </motion.a>
 
@@ -152,6 +181,7 @@ export function PortfolioSection() {
                 src="/thumbnails/Predictive-Analytics-v5.png"
                 data-full="/Predictive-Analytics-v5.png"
                 alt="Predictive Analytics"
+                style={{ transition: 'transform 0.5s ease' }}
               />
             </motion.a>
 
@@ -166,6 +196,7 @@ export function PortfolioSection() {
                 src="/thumbnails/Relaxing-Blob-v2.png"
                 data-full="/Relaxing-Blob-v2.jpg"
                 alt="Relaxing Blob"
+                style={{ transition: 'transform 0.5s ease' }}
               />
             </motion.a>
 
@@ -179,6 +210,7 @@ export function PortfolioSection() {
                 src="/thumbnails/Shorelight-Screenshot.png"
                 data-full="/Shorelight-Screenshot.png"
                 alt="Shorelight Screenshot"
+                style={{ transition: 'transform 0.5s ease' }}
               />
             </motion.a>
 
@@ -192,6 +224,7 @@ export function PortfolioSection() {
                 src="/thumbnails/UIC-Screenshot.png"
                 data-full="/UIC-Screenshot.png"
                 alt="UIC Screenshot"
+                style={{ transition: 'transform 0.5s ease' }}
               />
             </motion.a>
 
@@ -205,6 +238,7 @@ export function PortfolioSection() {
                 src="/thumbnails/US-News-Screenshot.png"
                 data-full="/US-News-Screenshot.png"
                 alt="US News Screenshot"
+                style={{ transition: 'transform 0.5s ease' }}
               />
             </motion.a>
 
@@ -218,6 +252,7 @@ export function PortfolioSection() {
                 src="/thumbnails/LSU-Screenshot.png"
                 data-full="/LSU-Screenshot.png"
                 alt="LSU Screenshot"
+                style={{ transition: 'transform 0.5s ease' }}
               />
             </motion.a>
 
@@ -231,6 +266,7 @@ export function PortfolioSection() {
                 src="/thumbnails/AU-Screenshot.png"
                 data-full="/AU-Screenshot.png"
                 alt="AU Screenshot"
+                style={{ transition: 'transform 0.5s ease' }}
               />
             </motion.a>
 
@@ -244,6 +280,7 @@ export function PortfolioSection() {
                 src="/thumbnails/MetroCU-Screenshot-v2.png"
                 data-full="/MetroCU-Screenshot-v2.png"
                 alt="MetroCU Screenshot"
+                style={{ transition: 'transform 0.5s ease' }}
               />
             </motion.a>
           </motion.div>
