@@ -65,7 +65,7 @@ export function Footer() {
         */}
         <div className="mt-0 w-full md:mt-0 md:order-1">
           <p className="text-center text-sm text-white">
-            © 2025 IronWorks Interactive. All rights reserved.
+            © 2026 IronWorks Interactive. All rights reserved.
           </p>
         </div>
       </div>
