@@ -78,9 +78,10 @@ export function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-32 mt-16">
         <div className="lg:max-w-3xl">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3, duration: 0.6 }}
+            initial={{ opacity: 0, translateY: 10 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ delay: 0.2, duration: 0.4, ease: [0.25, 0.46, 0.45, 0.94] }}
+            style={{ willChange: "transform, opacity" }}
           >
             <span className="inline-block bg-white/20 backdrop-blur-sm text-white px-4 py-1 rounded-full text-sm font-medium tracking-widest uppercase mb-4">
               Demand Generation Strategies
@@ -89,9 +90,10 @@ export function HeroSection() {
 
           <motion.h1 
             className="text-5xl md:text-7xl font-bold mb-6 text-white leading-tight"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5, duration: 0.7 }}
+            initial={{ opacity: 0, translateY: 15 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ delay: 0.3, duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+            style={{ willChange: "transform, opacity" }}
           >
             Creative <br className="hidden sm:block" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00ecff] via-[#7abebc] to-[#a0d9d6] animate-pulse-slow">
@@ -101,18 +103,20 @@ export function HeroSection() {
 
           <motion.p 
             className="text-xl md:text-2xl mb-10 text-gray-200 max-w-2xl"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.7, duration: 0.7 }}
+            initial={{ opacity: 0, translateY: 15 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ delay: 0.4, duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+            style={{ willChange: "transform, opacity" }}
           >
             Cutting-edge strategies for businesses to boost website traffic and increase revenue.
           </motion.p>
 
           <motion.div 
             className="flex flex-col sm:flex-row gap-5"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9, duration: 0.7 }}
+            initial={{ opacity: 0, translateY: 15 }}
+            animate={{ opacity: 1, translateY: 0 }}
+            transition={{ delay: 0.5, duration: 0.5, ease: [0.25, 0.46, 0.45, 0.94] }}
+            style={{ willChange: "transform, opacity" }}
           >
             <motion.button
               className="inline-flex items-center justify-center text-sm font-medium h-11 rounded-md px-8 bg-[#84CC16] text-gray-900 hover:bg-[#65a30d] shadow-lg shadow-[#84CC16]/30 group"
@@ -120,18 +124,21 @@ export function HeroSection() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              style={{ willChange: "transform" }}
             >
               View Portfolio
               <motion.span
                 className="ml-2"
-                initial={{ x: 0 }}
-                animate={{ x: [0, 5, 0] }}
+                initial={{ translateX: 0 }}
+                animate={{ translateX: [0, 5, 0] }}
                 transition={{ 
                   repeat: Infinity, 
                   repeatType: "loop", 
                   duration: 1.5,
-                  repeatDelay: 1
+                  repeatDelay: 1,
+                  ease: "easeInOut"
                 }}
+                style={{ willChange: "transform" }}
               >
                 <ArrowRight className="w-5 h-5" />
               </motion.span>
@@ -144,21 +151,23 @@ export function HeroSection() {
         className="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white z-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1.5, duration: 0.5 }}
+        transition={{ delay: 0.8, duration: 0.4 }}
+        style={{ willChange: "opacity" }}
       >
         <motion.button
           className="inline-flex items-center justify-center rounded-md text-sm font-medium p-4 text-white touch-manipulation"
           onClick={(e) => handleScrollToSection(e, "#portfolio")}
-          whileHover={{ y: 5 }}
+          whileHover={{ translateY: 5 }}
           whileTap={{ scale: 0.9 }}
-          animate={{ y: [0, 10, 0] }}
+          animate={{ translateY: [0, 10, 0] }}
           transition={{ 
             repeat: Infinity, 
             repeatType: "loop", 
             duration: 2,
-            repeatDelay: 0.5
+            repeatDelay: 0.5,
+            ease: "easeInOut"
           }}
-          style={{ minWidth: '48px', minHeight: '48px' }}
+          style={{ minWidth: '48px', minHeight: '48px', willChange: "transform" }}
         >
           <ArrowDown className="h-6 w-6" />
         </motion.button>

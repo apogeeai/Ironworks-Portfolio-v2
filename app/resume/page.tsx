@@ -696,11 +696,12 @@ export default function ResumePage() {
           className="mb-16"
         >
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.3 }}
-            viewport={{ once: true, margin: "-50px" }}
+            initial={{ opacity: 0, translateX: -10 }}
+            whileInView={{ opacity: 1, translateX: 0 }}
+            transition={{ duration: 0.2 }}
+            viewport={{ once: true, margin: "-30px" }}
             className="flex items-center gap-4 mb-8"
+            style={{ willChange: "transform, opacity" }}
           >
             <div className="p-3 bg-gradient-to-br from-[#3d6b6f] to-[#5c9da2] rounded-[10px] text-white">
               <GraduationCap className="w-7 h-7" />
