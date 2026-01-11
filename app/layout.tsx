@@ -84,6 +84,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        {/* Preload hero video for faster loading */}
+        <link
+          rel="preload"
+          as="video"
+          href="/video/IWI-BG-Video-v3.mp4?v=4"
+          type="video/mp4"
+        />
+      </head>
       <body className={cn(inter.className, "min-h-screen bg-[#f8f9fa] overflow-x-hidden font-sans")}>
         <ThemeProvider
           attribute="class"

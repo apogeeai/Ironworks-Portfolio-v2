@@ -102,6 +102,39 @@
   animation: fadeIn 0.5s ease-out forwards;
 }
 
+/* Mobile-optimized CSS animations (GPU accelerated, no JS) */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 15px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.4s ease-out forwards;
+}
+
+@keyframes skillFill {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.animate-skill-fill {
+  transform-origin: left;
+  transform: scaleX(0);
+  width: var(--skill-width, 100%);
+  animation: skillFill 0.5s ease-out forwards;
+}
+
 @keyframes pulse-slow {
   0%, 100% { opacity: 1; }
   50% { opacity: 0.85; }
@@ -249,57 +282,7 @@ a.gallery-item:hover .content-image {
   transform: scale(1.05) !important;
 }
 
-/* iOS Performance Optimizations */
-/* GPU acceleration for all motion elements */
-[data-framer-component],
-[data-framer-name] {
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  perspective: 1000px;
-  -webkit-perspective: 1000px;
-}
-
-/* Optimize Framer Motion components */
-[style*="will-change"] {
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-
-@media (max-width: 768px) {
-  /* Reduce animation complexity on mobile */
-  [data-framer-motion],
-  [data-framer-component],
-  [data-framer-name] {
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-  }
-  
-  /* Optimize touch interactions */
-  button, a {
-    -webkit-tap-highlight-color: transparent;
-    touch-action: manipulation;
-  }
-  
-  /* Reduce motion on mobile for better performance */
-  * {
-    animation-duration: 0.3s !important;
-    transition-duration: 0.2s !important;
-  }
-}
-
-/* Respect reduced motion preference */
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
+/* Touch optimizations */
+button, a {
+  -webkit-tap-highlight-color: transparent;
 }
